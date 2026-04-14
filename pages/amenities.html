@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore all facilities and amenities at Community Wellbeing Hub." />
+  <title>Amenities — Community Wellbeing Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/amenities.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        <span>Wellbeing Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="amenities.html" class="active">Amenities</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <div class="hamburger" role="button" tabindex="0" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="../index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="services.html">❤️ Services</a>
+    <a href="amenities.html">🏊 Amenities</a>
+    <a href="events.html">📅 Events</a>
+    <a href="resources.html">📚 Resources</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="booking.html" class="btn btn-primary mobile-cta">
+      <i class="fa-solid fa-calendar-check"></i> Book a Session
+    </a>
+  </div>
+
+  <!-- ══════════ PAGE HERO ══════════ -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Amenities</span>
+      </div>
+      <span class="section-label">Our Facilities</span>
+      <h1>World-Class <span class="hero-highlight">Amenities</span></h1>
+      <p>Everything you need under one roof — modern, accessible, and welcoming for every member of the community regardless of age or ability.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ QUICK ACCESS CARDS ══════════ -->
+  <section class="quick-access section-pad-sm">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Browse By Category</span>
+        <h2 class="section-title">Jump to a Category</h2>
+        <p class="section-subtitle">Click any card to jump directly to that facility category.</p>
+      </div>
+      <div class="qa-grid reveal">
+        <a href="#fitness" class="qa-card">
+          <div class="qa-icon" style="--qclr:#E8E8FF">🏋️</div>
+          <h3>Fitness</h3>
+          <p>Gym, pool & courts</p>
+        </a>
+        <a href="#outdoor" class="qa-card">
+          <div class="qa-icon" style="--qclr:#E8F5E9">🌳</div>
+          <h3>Outdoor Spaces</h3>
+          <p>Parks, trails & gardens</p>
+        </a>
+        <a href="#children" class="qa-card">
+          <div class="qa-icon" style="--qclr:#FFF3E0">🧒</div>
+          <h3>Children's</h3>
+          <p>Play & activities</p>
+        </a>
+        <a href="#elderly" class="qa-card">
+          <div class="qa-icon" style="--qclr:#FFE4F0">👵</div>
+          <h3>Elderly Friendly</h3>
+          <p>Accessible facilities</p>
+        </a>
+        <a href="#health" class="qa-card">
+          <div class="qa-icon" style="--qclr:#E0F7FB">🩺</div>
+          <h3>Health Suites</h3>
+          <p>Checkups & therapy</p>
+        </a>
+        <a href="#social" class="qa-card">
+          <div class="qa-icon" style="--qclr:#F3E5F5">🎨</div>
+          <h3>Social & Creative</h3>
+          <p>Arts, library & café</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FITNESS ══════════ -->
+  <section id="fitness" class="amenity-section section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#E8E8FF">🏋️</div>
+        <div>
+          <span class="section-label">Fitness</span>
+          <h2 class="section-title">Fitness Facilities</h2>
+          <p class="section-subtitle">State-of-the-art fitness facilities for all levels — from beginners to seasoned athletes.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8E8FF">
+            <span class="amenity-card-emoji">🏋️</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Fully Equipped Gym</h3>
+            <p>Over 80 pieces of modern equipment including free weights, cardio machines, resistance stations and functional training zones.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 6am – 10pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Ground Floor, Block A</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Session</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E0F7FB">
+            <span class="amenity-card-emoji">🏊</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Swimming Pool</h3>
+            <p>25-metre indoor heated pool with dedicated lane swimming, leisure swim sessions, and a separate learner pool for children.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 7am – 9pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Aquatic Centre, Block B</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £2 per session</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Session</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFF3E0">
+            <span class="amenity-card-emoji">🏀</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Basketball Court</h3>
+            <p>Full-size indoor basketball court available for casual play, team bookings, and coached sessions for all ages and abilities.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 8am – 9pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Sports Hall, Block C</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Session</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">🎾</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Tennis Courts</h3>
+            <p>Four all-weather indoor and outdoor tennis courts. Racket hire available. Coaching sessions available for all skill levels.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 7am – 9pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Outdoor Courts, East Wing</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £3 per hour</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Court</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#F3E5F5">
+            <span class="amenity-card-emoji">🏸</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Badminton Courts</h3>
+            <p>Three professional-grade badminton courts with high ceilings and proper lighting. Shuttlecocks and rackets available to hire.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 8am – 9pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Sports Hall, Block C</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £2.50 per hour</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Court</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFE4F0">
+            <span class="amenity-card-emoji">🧘</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Yoga & Pilates Studio</h3>
+            <p>Dedicated studio space for yoga, pilates, and mindfulness classes. Mats, blocks, and straps provided for all participants.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 7am – 8pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellness Studio, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Class</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8E8FF">
+            <span class="amenity-card-emoji">🚴</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Indoor Cycling Studio</h3>
+            <p>State-of-the-art spin studio with 24 bikes, immersive lighting, and high-energy instructors for group cycling sessions.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 6am – 8pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Cycle Studio, Ground Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Class</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E0F7FB">
+            <span class="amenity-card-emoji">🥊</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Boxing & Martial Arts Studio</h3>
+            <p>Fully equipped boxing gym with heavy bags, speed bags, and a sparring ring. Classes for all ages including children.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 8pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Combat Studio, Block A</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £3 per session</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book a Session</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OUTDOOR ══════════ -->
+  <section id="outdoor" class="amenity-section amenity-section-alt section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#E8F5E9">🌳</div>
+        <div>
+          <span class="section-label">Outdoor Spaces</span>
+          <h2 class="section-title">Outdoor Facilities</h2>
+          <p class="section-subtitle">Beautiful outdoor spaces where you can exercise, relax, and connect with nature and community.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">🌳</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Community Park & Gardens</h3>
+            <p>A beautiful landscaped park with walking paths, seating areas, and seasonal flower gardens — perfect for relaxation.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Open 24 hours</span>
+              <span><i class="fa-solid fa-location-dot"></i> South Grounds</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFF3E0">
+            <span class="amenity-card-emoji">🏃</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Walking & Running Trail</h3>
+            <p>A 1.2km marked trail looping through the grounds. Suitable for walking, jogging, and light running for all fitness levels.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Open 24 hours</span>
+              <span><i class="fa-solid fa-location-dot"></i> Perimeter Grounds</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">💪</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Outdoor Gym</h3>
+            <p>A fully equipped outdoor gym area with resistance stations, pull-up bars, and stretching zones — free to use all year round.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Open 24 hours</span>
+              <span><i class="fa-solid fa-location-dot"></i> North Grounds</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F0E8">
+            <span class="amenity-card-emoji">🌱</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Community Garden</h3>
+            <p>Raised vegetable beds and herb gardens tended by community volunteers. Plots available to rent on request.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 8am – 7pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> West Grounds</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Rent a Plot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CHILDREN ══════════ -->
+  <section id="children" class="amenity-section section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#FFF3E0">🧒</div>
+        <div>
+          <span class="section-label">Children's Facilities</span>
+          <h2 class="section-title">Children's Areas</h2>
+          <p class="section-subtitle">Safe, fun, and supervised spaces designed specifically for children to play, learn, and grow.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFF3E0">
+            <span class="amenity-card-emoji">🛝</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Indoor Soft Play Zone</h3>
+            <p>A massive multi-level soft play structure with slides, ball pits, climbing frames, and a dedicated toddler section.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 6pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Children's Wing, Ground Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £1.50 per child</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">🎨</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Art & Craft Room</h3>
+            <p>A creative space for children to explore art, craft, and imaginative play. All materials provided and sessions supervised.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 10am – 5pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Children's Wing, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with booking</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E0F7FB">
+            <span class="amenity-card-emoji">🏊</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Children's Pool</h3>
+            <p>A warm, shallow learner pool with fun water features, perfectly designed for toddlers and young children.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 6pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Aquatic Centre, Block B</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £1 per child</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFE4F0">
+            <span class="amenity-card-emoji">🛹</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Skate Park</h3>
+            <p>An outdoor skate park with ramps, rails, and bowls for skateboarders and BMX riders of all skill levels.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 8am – 8pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> East Grounds</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ELDERLY ══════════ -->
+  <section id="elderly" class="amenity-section amenity-section-alt section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#FFE4F0">👵</div>
+        <div>
+          <span class="section-label">Elderly Friendly</span>
+          <h2 class="section-title">Elderly-Friendly Facilities</h2>
+          <p class="section-subtitle">Fully accessible spaces designed with comfort, safety, and independence in mind for our older community members.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFE4F0">
+            <span class="amenity-card-emoji">🪑</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Gentle Exercise Room</h3>
+            <p>A calm, accessible exercise space with seated equipment, resistance bands, and balance aids — ideal for older adults.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 5pm Mon–Fri</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellbeing Suite, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFF3E0">
+            <span class="amenity-card-emoji">☕</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Memory Café</h3>
+            <p>A welcoming café space for people living with dementia and their carers to meet, socialise, and enjoy activities together.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Tuesdays 10am – 12pm</span>
+              <span><i class="fa-solid fa-location-dot"></i> Community Café, Ground Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free entry</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">♿</span>
+            <span class="amenity-status open">Accessible</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Accessible Swimming Sessions</h3>
+            <p>Dedicated pool sessions for older adults and those with mobility challenges — with hoists, rails, and trained staff.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Mon, Wed, Fri 11am–1pm</span>
+              <span><i class="fa-solid fa-location-dot"></i> Aquatic Centre, Block B</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with membership</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8E8FF">
+            <span class="amenity-card-emoji">🎭</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Social Lounge</h3>
+            <p>A comfortable, relaxed lounge area for older residents to socialise, read, play board games, and enjoy refreshments.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 6pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Community Wing, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ HEALTH SUITES ══════════ -->
+  <section id="health" class="amenity-section section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#E0F7FB">🩺</div>
+        <div>
+          <span class="section-label">Health</span>
+          <h2 class="section-title">Health Suites</h2>
+          <p class="section-subtitle">Professional health facilities providing screenings, therapy, and wellbeing consultations.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E0F7FB">
+            <span class="amenity-card-emoji">🩺</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Health Screening Suite</h3>
+            <p>Walk-in health screenings including blood pressure, BMI, blood sugar, and cholesterol checks by trained professionals.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Mon–Fri 9am – 4pm</span>
+              <span><i class="fa-solid fa-location-dot"></i> Health Suite, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFE4F0">
+            <span class="amenity-card-emoji">🫁</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Physiotherapy Room</h3>
+            <p>Professional physiotherapy sessions for injury rehabilitation, chronic pain management, and post-operative recovery.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Mon–Sat 9am – 6pm</span>
+              <span><i class="fa-solid fa-location-dot"></i> Health Suite, 1st Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £20 per session</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8E8FF">
+            <span class="amenity-card-emoji">🧠</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Counselling Rooms</h3>
+            <p>Private, soundproofed consultation rooms for mental health counselling, therapy, and wellbeing assessments.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> Mon–Fri 8am – 7pm</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellbeing Suite, 2nd Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free with referral</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">💆</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Relaxation & Sauna Suite</h3>
+            <p>A tranquil relaxation area with sauna, steam room, and quiet rest space — perfect for post-workout recovery.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 7am – 9pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Aquatic Centre, Block B</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £5 per session</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SOCIAL & CREATIVE ══════════ -->
+  <section id="social" class="amenity-section amenity-section-alt section-pad">
+    <div class="container">
+      <div class="amenity-section-header reveal">
+        <div class="amenity-section-icon" style="--aic:#F3E5F5">🎨</div>
+        <div>
+          <span class="section-label">Social & Creative</span>
+          <h2 class="section-title">Social & Creative Spaces</h2>
+          <p class="section-subtitle">Inspiring spaces to connect, create, and celebrate community life together.</p>
+        </div>
+      </div>
+      <div class="amenity-cards-grid">
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#F3E5F5">
+            <span class="amenity-card-emoji">🎨</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Art Studio</h3>
+            <p>A large creative studio with easels, art supplies, pottery wheels, and ample natural light for artists of all abilities.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 10am – 6pm Tue–Sun</span>
+              <span><i class="fa-solid fa-location-dot"></i> Creative Wing, 2nd Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> £2 per session</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8E8FF">
+            <span class="amenity-card-emoji">📚</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Community Library</h3>
+            <p>A quiet, welcoming library with thousands of books, digital resources, and comfortable reading areas for all ages.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 7pm Mon–Sat</span>
+              <span><i class="fa-solid fa-location-dot"></i> Library Wing, Ground Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free access</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#FFF3E0">
+            <span class="amenity-card-emoji">☕</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Community Café</h3>
+            <p>A friendly café serving healthy meals, snacks, and hot drinks. A great place to meet, relax, and socialise.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 8am – 6pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Ground Floor, Main Entrance</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Pay as you go</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="amenity-card card reveal">
+          <div class="amenity-card-header" style="--ach:#E8F5E9">
+            <span class="amenity-card-emoji">🎭</span>
+            <span class="amenity-status open">Open Now</span>
+          </div>
+          <div class="amenity-card-body">
+            <h3>Community Hall</h3>
+            <p>A large multipurpose hall available for events, performances, classes, and community gatherings. Fully accessible.</p>
+            <div class="amenity-details">
+              <span><i class="fa-solid fa-clock"></i> 9am – 10pm daily</span>
+              <span><i class="fa-solid fa-location-dot"></i> Main Building, Ground Floor</span>
+              <span><i class="fa-solid fa-sterling-sign"></i> Free to hire</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary btn-sm">Book Hall</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA BANNER ══════════ -->
+  <section class="cta-banner section-pad-sm">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-shape cta-shape-1"></div>
+        <div class="cta-shape cta-shape-2"></div>
+        <div class="cta-content">
+          <h2>Ready to Explore Our Facilities?</h2>
+          <p>Book a free tour or jump straight into a session — our team will be happy to help you get started.</p>
+          <div class="cta-actions">
+            <a href="booking.html" class="btn btn-white btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Book a Session
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-map-location-dot"></i> Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🌿</div>
+            Wellbeing Hub
+          </div>
+          <p>A community-first space dedicated to health, happiness, and belonging — for everyone.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mental-health.html">Mental Health</a></li>
+            <li><a href="health-checkup.html">Health Checkups</a></li>
+            <li><a href="community-support.html">Community Help</a></li>
+            <li><a href="family-services.html">Family Support</a></li>
+            <li><a href="children-activities.html">Children's Activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+442012345678"><i class="fa-solid fa-phone" style="margin-right:6px;color:var(--secondary)"></i>+44 20 1234 5678</a></li>
+            <li><a href="mailto:info@wellbeinghub.org"><i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--secondary)"></i>info@wellbeinghub.org</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--secondary)"></i>12 Community Lane, London</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock" style="margin-right:6px;color:var(--secondary)"></i>Mon–Sat: 7am – 9pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Community Wellbeing Hub. All rights reserved.</p>
+        <p>Made with ❤️ for the community</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIVE CHAT ══════════ -->
+  <div class="chat-widget">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-avatar">💬</div>
+        <div class="chat-header-info">
+          <h4>Wellbeing Support</h4>
+          <span><span class="online-dot"></span> We're online now</span>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <div class="msg msg-bot">Hi! 👋 Want to know more about our facilities?</div>
+        <div class="msg msg-bot">I can help you find and book the right amenity!</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" placeholder="Type a message..." aria-label="Chat message" />
+        <button class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <div class="chat-bubble" role="button" aria-label="Open chat">💬</div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

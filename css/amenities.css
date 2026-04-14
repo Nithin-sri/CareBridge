@@ -1,0 +1,150 @@
+/* ============================================================
+   AMENITIES PAGE — Styles
+   ============================================================ */
+
+.hero-highlight {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Quick Access ── */
+.quick-access { background: var(--bg); }
+.qa-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+.qa-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  display: block;
+}
+.qa-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+.qa-icon {
+  width: 56px; height: 56px;
+  background: var(--qclr, var(--primary-light));
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 12px;
+}
+.qa-card h3 { font-size: 0.875rem; font-weight: 700; margin-bottom: 4px; }
+.qa-card p  { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ── Amenity Sections ── */
+.amenity-section { background: var(--bg); }
+.amenity-section-alt { background: linear-gradient(180deg, #F0F0FF 0%, var(--bg) 100%); }
+
+.amenity-section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.amenity-section-icon {
+  width: 72px; height: 72px; min-width: 72px;
+  background: var(--aic, var(--primary-light));
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+}
+
+/* ── Amenity Cards ── */
+.amenity-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.amenity-card-header {
+  background: var(--ach, var(--primary-light));
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amenity-card-emoji { font-size: 2.2rem; }
+
+.amenity-status {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+.amenity-status.open {
+  background: rgba(74, 222, 128, 0.15);
+  color: #16a34a;
+}
+.amenity-status.closed {
+  background: rgba(248, 113, 113, 0.15);
+  color: #dc2626;
+}
+
+.amenity-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.amenity-card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.amenity-card-body p {
+  font-size: 0.825rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.amenity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 4px 0;
+}
+.amenity-details span {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.amenity-details i {
+  color: var(--primary);
+  font-size: 0.72rem;
+  width: 12px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .qa-grid { grid-template-columns: repeat(3, 1fr); }
+  .amenity-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .qa-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenity-section-header { flex-direction: column; }
+  .amenity-cards-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .qa-grid { grid-template-columns: repeat(2, 1fr); }
+}

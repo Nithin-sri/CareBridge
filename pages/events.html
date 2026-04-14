@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Upcoming events and activities at Community Wellbeing Hub." />
+  <title>Events — Community Wellbeing Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/events.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        <span>Wellbeing Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <div class="hamburger" role="button" tabindex="0" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="../index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="services.html">❤️ Services</a>
+    <a href="amenities.html">🏊 Amenities</a>
+    <a href="events.html">📅 Events</a>
+    <a href="resources.html">📚 Resources</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="booking.html" class="btn btn-primary mobile-cta">
+      <i class="fa-solid fa-calendar-check"></i> Book a Session
+    </a>
+  </div>
+
+  <!-- ══════════ PAGE HERO ══════════ -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Events</span>
+      </div>
+      <span class="section-label">What's On</span>
+      <h1>Upcoming <span class="hero-highlight">Events</span></h1>
+      <p>Discover workshops, classes, health days, and community activities happening at the Wellbeing Hub. Something for everyone — all ages welcome.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ QUICK ACCESS FILTER CARDS ══════════ -->
+  <section class="quick-access section-pad-sm">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Browse By Category</span>
+        <h2 class="section-title">Filter Events</h2>
+        <p class="section-subtitle">Click a category card to filter events by type.</p>
+      </div>
+      <div class="qa-grid reveal">
+        <button class="qa-card active-filter" data-filter="all">
+          <div class="qa-icon" style="--qclr:#E8E8FF">📅</div>
+          <h3>All Events</h3>
+          <p>Show everything</p>
+        </button>
+        <button class="qa-card" data-filter="mental-health">
+          <div class="qa-icon" style="--qclr:#E8E8FF">🧠</div>
+          <h3>Mental Health</h3>
+          <p>Therapy & mindfulness</p>
+        </button>
+        <button class="qa-card" data-filter="fitness">
+          <div class="qa-icon" style="--qclr:#E0F7FB">💪</div>
+          <h3>Fitness</h3>
+          <p>Classes & sport</p>
+        </button>
+        <button class="qa-card" data-filter="health">
+          <div class="qa-icon" style="--qclr:#FFE4F0">🩺</div>
+          <h3>Health Days</h3>
+          <p>Free checkups</p>
+        </button>
+        <button class="qa-card" data-filter="family">
+          <div class="qa-icon" style="--qclr:#E8F5E9">👨‍👩‍👧</div>
+          <h3>Family</h3>
+          <p>Activities for all</p>
+        </button>
+        <button class="qa-card" data-filter="elderly">
+          <div class="qa-icon" style="--qclr:#FFF3E0">👵</div>
+          <h3>Elderly</h3>
+          <p>Social & gentle classes</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ EVENTS GRID ══════════ -->
+  <section class="events-section section-pad">
+    <div class="container">
+      <div class="events-section-header reveal">
+        <div>
+          <span class="section-label">April – May 2025</span>
+          <h2 class="section-title">All Upcoming Events</h2>
+        </div>
+        <div class="events-count">
+          <span id="eventCount">12</span> events found
+        </div>
+      </div>
+
+      <div class="events-grid" id="eventsGrid">
+
+        <!-- Event 1 -->
+        <div class="event-full-card card reveal" data-category="mental-health">
+          <div class="efc-left" style="--elc:#5E60CE">
+            <div class="efc-date">
+              <span class="efc-day">22</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🧘</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-primary">Mental Health</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Mindfulness & Meditation Morning</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 9:00 AM – 11:00 AM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellness Studio, Ground Floor</span>
+              <span><i class="fa-solid fa-users"></i> 12 spots left</span>
+            </div>
+            <p>A guided session covering breathing techniques, body scanning, and stress relief. Suitable for all levels including complete beginners.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event-full-card card reveal" data-category="fitness">
+          <div class="efc-left" style="--elc:#48CAE4">
+            <div class="efc-date">
+              <span class="efc-day">23</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🏋️</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-secondary">Fitness</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Beginner Gym Induction</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 10:00 AM – 11:30 AM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Main Gym, Ground Floor</span>
+              <span><i class="fa-solid fa-users"></i> 8 spots left</span>
+            </div>
+            <p>New to the gym? Join our friendly induction session and learn how to safely use all the equipment with one of our qualified trainers.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event-full-card card reveal" data-category="elderly">
+          <div class="efc-left" style="--elc:#FF8C42">
+            <div class="efc-date">
+              <span class="efc-day">24</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🪑</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge" style="background:#FFF3E0;color:#e65c00">Elderly</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Seated Exercise & Balance Class</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 11:00 AM – 12:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellbeing Suite, 1st Floor</span>
+              <span><i class="fa-solid fa-users"></i> 10 spots left</span>
+            </div>
+            <p>Gentle chair-based exercises designed to improve flexibility, strength, and balance for older adults. All abilities welcome.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="event-full-card card reveal" data-category="family">
+          <div class="efc-left" style="--elc:#48CAE4">
+            <div class="efc-date">
+              <span class="efc-day">25</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🏊</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-secondary">Family</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Family Swim & Fun Day</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 1:00 PM – 4:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Main Swimming Pool</span>
+              <span><i class="fa-solid fa-users"></i> 20 spots left</span>
+            </div>
+            <p>A fun afternoon for the whole family. Lifeguards present, floats and pool toys provided. All ages welcome — bring the whole family!</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="event-full-card card reveal" data-category="mental-health">
+          <div class="efc-left" style="--elc:#5E60CE">
+            <div class="efc-date">
+              <span class="efc-day">26</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🗣️</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-primary">Mental Health</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Anxiety Support Group</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 6:00 PM – 7:30 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Counselling Room 2, 2nd Floor</span>
+              <span><i class="fa-solid fa-users"></i> 5 spots left</span>
+            </div>
+            <p>A safe, confidential group session for those experiencing anxiety. Facilitated by a qualified therapist in a warm, supportive environment.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="event-full-card card reveal" data-category="health">
+          <div class="efc-left" style="--elc:#F72585">
+            <div class="efc-date">
+              <span class="efc-day">28</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🩺</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-accent">Health Day</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Free Adult Health Checkup Day</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 10:00 AM – 3:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Health Suite, First Floor</span>
+              <span><i class="fa-solid fa-users"></i> Walk-in welcome</span>
+            </div>
+            <p>Walk-in health screenings including BP, BMI, blood sugar, and cholesterol. No appointment needed — just turn up and get checked.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Register Now</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 7 -->
+        <div class="event-full-card card reveal" data-category="fitness">
+          <div class="efc-left" style="--elc:#48CAE4">
+            <div class="efc-date">
+              <span class="efc-day">29</span>
+              <span class="efc-month">Apr</span>
+            </div>
+            <div class="efc-icon">🎾</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-secondary">Fitness</span>
+              <span class="badge-paid">£3</span>
+            </div>
+            <h3>Tennis Taster Session</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 2:00 PM – 3:30 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Outdoor Courts, East Wing</span>
+              <span><i class="fa-solid fa-users"></i> 6 spots left</span>
+            </div>
+            <p>Never played tennis before? Join our friendly taster session with a qualified coach. Rackets and balls provided. All ages welcome.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 8 -->
+        <div class="event-full-card card reveal" data-category="elderly">
+          <div class="efc-left" style="--elc:#FF8C42">
+            <div class="efc-date">
+              <span class="efc-day">01</span>
+              <span class="efc-month">May</span>
+            </div>
+            <div class="efc-icon">☕</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge" style="background:#FFF3E0;color:#e65c00">Elderly</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Memory Café – Monthly Gathering</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 10:00 AM – 12:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Community Café, Ground Floor</span>
+              <span><i class="fa-solid fa-users"></i> All welcome</span>
+            </div>
+            <p>A warm and welcoming monthly gathering for people living with dementia and their carers. Activities, refreshments, and great company!</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 9 -->
+        <div class="event-full-card card reveal" data-category="family">
+          <div class="efc-left" style="--elc:#3DBE7A">
+            <div class="efc-date">
+              <span class="efc-day">03</span>
+              <span class="efc-month">May</span>
+            </div>
+            <div class="efc-icon">🎨</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge" style="background:#E8F5E9;color:#2e7d32">Family</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Children's Arts & Crafts Workshop</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 11:00 AM – 1:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Art & Craft Room, 1st Floor</span>
+              <span><i class="fa-solid fa-users"></i> 15 spots left</span>
+            </div>
+            <p>A fun creative workshop for children aged 5–12. All materials provided — kids will create their own masterpieces to take home!</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 10 -->
+        <div class="event-full-card card reveal" data-category="health">
+          <div class="efc-left" style="--elc:#F72585">
+            <div class="efc-date">
+              <span class="efc-day">06</span>
+              <span class="efc-month">May</span>
+            </div>
+            <div class="efc-icon">🫀</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-accent">Health Day</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Heart Health Awareness Day</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 9:00 AM – 2:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Health Suite, First Floor</span>
+              <span><i class="fa-solid fa-users"></i> Walk-in welcome</span>
+            </div>
+            <p>Free cholesterol and blood pressure checks, heart health talks by a cardiologist, and take-home resources. No appointment needed.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Register Now</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 11 -->
+        <div class="event-full-card card reveal" data-category="fitness">
+          <div class="efc-left" style="--elc:#5E60CE">
+            <div class="efc-date">
+              <span class="efc-day">08</span>
+              <span class="efc-month">May</span>
+            </div>
+            <div class="efc-icon">🧘</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-primary">Fitness</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Outdoor Yoga in the Park</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 8:00 AM – 9:00 AM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Community Park, South Grounds</span>
+              <span><i class="fa-solid fa-users"></i> Open to all</span>
+            </div>
+            <p>Start your day with an energising outdoor yoga session in our beautiful park. Mats provided — just bring yourself and comfortable clothes.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 12 -->
+        <div class="event-full-card card reveal" data-category="mental-health">
+          <div class="efc-left" style="--elc:#5E60CE">
+            <div class="efc-date">
+              <span class="efc-day">10</span>
+              <span class="efc-month">May</span>
+            </div>
+            <div class="efc-icon">💆</div>
+          </div>
+          <div class="efc-body">
+            <div class="efc-tags">
+              <span class="badge badge-primary">Mental Health</span>
+              <span class="badge-free">FREE</span>
+            </div>
+            <h3>Stress & Burnout Recovery Workshop</h3>
+            <div class="efc-meta">
+              <span><i class="fa-solid fa-clock"></i> 5:30 PM – 7:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Wellness Studio, Ground Floor</span>
+              <span><i class="fa-solid fa-users"></i> 10 spots left</span>
+            </div>
+            <p>A practical workshop covering the science of stress and proven techniques to recover from burnout and rebuild your energy and focus.</p>
+            <div class="efc-actions">
+              <a href="booking.html" class="btn btn-primary btn-sm">Book Free Spot</a>
+              <span class="efc-share"><i class="fa-solid fa-share-nodes"></i> Share</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end events-grid -->
+
+      <!-- No results message -->
+      <div class="no-events" id="noEvents" style="display:none;">
+        <div class="no-events-icon">📭</div>
+        <h3>No events found in this category</h3>
+        <p>Try selecting a different category or check back soon for new events.</p>
+        <button class="btn btn-primary" onclick="filterEvents('all')">Show All Events</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════ CTA BANNER ══════════ -->
+  <section class="cta-banner section-pad-sm">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-shape cta-shape-1"></div>
+        <div class="cta-shape cta-shape-2"></div>
+        <div class="cta-content">
+          <h2>Want to Suggest an Event?</h2>
+          <p>We love hearing from our community. If you have an idea for an event or workshop, get in touch with us!</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-white btn-lg">
+              <i class="fa-solid fa-envelope"></i> Contact Us
+            </a>
+            <a href="booking.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Book a Session
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🌿</div>
+            Wellbeing Hub
+          </div>
+          <p>A community-first space dedicated to health, happiness, and belonging — for everyone.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mental-health.html">Mental Health</a></li>
+            <li><a href="health-checkup.html">Health Checkups</a></li>
+            <li><a href="community-support.html">Community Help</a></li>
+            <li><a href="family-services.html">Family Support</a></li>
+            <li><a href="children-activities.html">Children's Activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+442012345678"><i class="fa-solid fa-phone" style="margin-right:6px;color:var(--secondary)"></i>+44 20 1234 5678</a></li>
+            <li><a href="mailto:info@wellbeinghub.org"><i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--secondary)"></i>info@wellbeinghub.org</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--secondary)"></i>12 Community Lane, London</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock" style="margin-right:6px;color:var(--secondary)"></i>Mon–Sat: 7am – 9pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Community Wellbeing Hub. All rights reserved.</p>
+        <p>Made with ❤️ for the community</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIVE CHAT ══════════ -->
+  <div class="chat-widget">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-avatar">💬</div>
+        <div class="chat-header-info">
+          <h4>Wellbeing Support</h4>
+          <span><span class="online-dot"></span> We're online now</span>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <div class="msg msg-bot">Hi! 👋 Looking for a specific event?</div>
+        <div class="msg msg-bot">I can help you find and book the right one!</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" placeholder="Type a message..." aria-label="Chat message" />
+        <button class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <div class="chat-bubble" role="button" aria-label="Open chat">💬</div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/events.js"></script>
+</body>
+</html>

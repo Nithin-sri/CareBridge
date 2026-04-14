@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Family support services at Community Wellbeing Hub." />
+  <title>Family Services — Community Wellbeing Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/family-services.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        <span>Wellbeing Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <div class="hamburger" role="button" tabindex="0" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="../index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="services.html">❤️ Services</a>
+    <a href="amenities.html">🏊 Amenities</a>
+    <a href="events.html">📅 Events</a>
+    <a href="resources.html">📚 Resources</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="booking.html" class="btn btn-primary mobile-cta">
+      <i class="fa-solid fa-calendar-check"></i> Book a Session
+    </a>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="sub-hero" style="--shc1:#E0F7FB;--shc2:#F8F9FF;--shc3:#FFF3E0">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="services.html">Services</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Family Services</span>
+      </div>
+      <div class="sub-hero-inner">
+        <div class="sub-hero-content">
+          <div class="sub-hero-icon">👨‍👩‍👧</div>
+          <span class="section-label">Family Services</span>
+          <h1>Supporting <span class="hero-highlight">Every Family</span></h1>
+          <p>From parenting support and family counselling to nutrition advice and wellbeing activities — we're here for every family, at every stage.</p>
+          <div class="sub-hero-actions">
+            <a href="booking.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Book a Session
+            </a>
+            <a href="services.html" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-arrow-left"></i> All Services
+            </a>
+          </div>
+        </div>
+        <div class="sub-hero-stats">
+          <div class="sub-stat">
+            <span class="sub-stat-num">850+</span>
+            <span class="sub-stat-label">Families Supported</span>
+          </div>
+          <div class="sub-stat">
+            <span class="sub-stat-num">4</span>
+            <span class="sub-stat-label">Core Services</span>
+          </div>
+          <div class="sub-stat">
+            <span class="sub-stat-num">Free</span>
+            <span class="sub-stat-label">All Sessions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ QUICK ACCESS ══════════ -->
+  <section class="quick-access section-pad-sm">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">What We Offer Families</h2>
+        <p class="section-subtitle">Click any card to jump to that service.</p>
+      </div>
+      <div class="qa-grid reveal">
+        <a href="#parenting" class="qa-card">
+          <div class="qa-icon" style="--qclr:#E0F7FB">👶</div>
+          <h3>Parenting Support</h3>
+          <p>Advice & workshops</p>
+        </a>
+        <a href="#wellbeing" class="qa-card">
+          <div class="qa-icon" style="--qclr:#E8F5E9">🏡</div>
+          <h3>Family Wellbeing</h3>
+          <p>Group activities</p>
+        </a>
+        <a href="#nutrition" class="qa-card">
+          <div class="qa-icon" style="--qclr:#FFF3E0">🍽️</div>
+          <h3>Nutrition Advice</h3>
+          <p>Healthy eating</p>
+        </a>
+        <a href="#mediation" class="qa-card">
+          <div class="qa-icon" style="--qclr:#FFE4F0">💬</div>
+          <h3>Family Mediation</h3>
+          <p>Conflict resolution</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PARENTING ══════════ -->
+  <section id="parenting" class="sub-service-section section-pad">
+    <div class="container">
+      <div class="sub-service-layout reveal">
+        <div class="sub-service-content">
+          <div class="sub-service-icon-wrap" style="--ssic:#E0F7FB">👶</div>
+          <span class="section-label">Parenting</span>
+          <h2 class="section-title">Parenting Support</h2>
+          <p>Whether you're a first-time parent or navigating the challenges of raising teenagers, our experienced team provides compassionate, practical guidance tailored to your family's unique needs.</p>
+          <ul class="sub-features">
+            <li><i class="fa-solid fa-check"></i> One-to-one parenting consultations</li>
+            <li><i class="fa-solid fa-check"></i> Baby & toddler groups (0–3 years)</li>
+            <li><i class="fa-solid fa-check"></i> Teen parenting workshops</li>
+            <li><i class="fa-solid fa-check"></i> Sleep & routine guidance</li>
+            <li><i class="fa-solid fa-check"></i> Positive discipline strategies</li>
+            <li><i class="fa-solid fa-check"></i> Home visit support available</li>
+          </ul>
+          <div class="sub-meta-row">
+            <span class="sub-meta-item"><i class="fa-solid fa-clock"></i> Mon–Fri, 9am–5pm</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-sterling-sign"></i> Free</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-location-dot"></i> Family Suite, 1st Floor</span>
+          </div>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book a Session</a>
+        </div>
+        <div class="sub-service-cards">
+          <div class="sub-info-card" style="--sic:#E0F7FB">
+            <span>👶</span><h4>Baby & Toddler Group</h4>
+            <p>Tues & Thurs, 10am</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E8F5E9">
+            <span>🧒</span><h4>Child Development</h4>
+            <p>Mon & Wed, 2pm</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#FFF3E0">
+            <span>👦</span><h4>Teen Parenting</h4>
+            <p>Fri, 6pm</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#FFE4F0">
+            <span>🏠</span><h4>Home Visits</h4>
+            <p>By appointment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ WELLBEING ══════════ -->
+  <section id="wellbeing" class="sub-service-section sub-alt section-pad">
+    <div class="container">
+      <div class="sub-service-layout sub-reverse reveal">
+        <div class="sub-service-cards">
+          <div class="sub-info-card" style="--sic:#E8F5E9">
+            <span>🎮</span><h4>Family Game Days</h4>
+            <p>Every Saturday, 2pm</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E0F7FB">
+            <span>🏃</span><h4>Active Family Sessions</h4>
+            <p>Sun, 10am</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#FFF3E0">
+            <span>🎨</span><h4>Creative Together</h4>
+            <p>Wed, 4pm</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#FFE4F0">
+            <span>🌳</span><h4>Outdoor Family Walks</h4>
+            <p>Monthly events</p>
+          </div>
+        </div>
+        <div class="sub-service-content">
+          <div class="sub-service-icon-wrap" style="--ssic:#E8F5E9">🏡</div>
+          <span class="section-label">Family Wellbeing</span>
+          <h2 class="section-title">Family Wellbeing Sessions</h2>
+          <p>Our family wellbeing sessions are designed to bring families together through fun, shared activities that build communication, trust, and connection.</p>
+          <ul class="sub-features">
+            <li><i class="fa-solid fa-check"></i> Indoor & outdoor activities</li>
+            <li><i class="fa-solid fa-check"></i> All ages welcome together</li>
+            <li><i class="fa-solid fa-check"></i> Family game & craft days</li>
+            <li><i class="fa-solid fa-check"></i> Active family sport sessions</li>
+            <li><i class="fa-solid fa-check"></i> Guided by trained facilitators</li>
+          </ul>
+          <div class="sub-meta-row">
+            <span class="sub-meta-item"><i class="fa-solid fa-clock"></i> Weekends & evenings</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-sterling-sign"></i> Free</span>
+          </div>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book a Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ NUTRITION ══════════ -->
+  <section id="nutrition" class="sub-service-section section-pad">
+    <div class="container">
+      <div class="sub-service-layout reveal">
+        <div class="sub-service-content">
+          <div class="sub-service-icon-wrap" style="--ssic:#FFF3E0">🍽️</div>
+          <span class="section-label">Nutrition</span>
+          <h2 class="section-title">Family Nutrition Advice</h2>
+          <p>Our dietitian-led nutrition sessions help families build healthier eating habits without breaking the bank. Practical, jargon-free advice tailored for real family life.</p>
+          <ul class="sub-features">
+            <li><i class="fa-solid fa-check"></i> Family meal planning workshops</li>
+            <li><i class="fa-solid fa-check"></i> Budget-friendly cooking classes</li>
+            <li><i class="fa-solid fa-check"></i> Kids' nutrition guidance</li>
+            <li><i class="fa-solid fa-check"></i> Fussy eater strategies</li>
+            <li><i class="fa-solid fa-check"></i> Personalised diet consultations</li>
+          </ul>
+          <div class="sub-meta-row">
+            <span class="sub-meta-item"><i class="fa-solid fa-clock"></i> Thurs, 5pm & Sat 11am</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-sterling-sign"></i> Free</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-location-dot"></i> Community Kitchen</span>
+          </div>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book a Session</a>
+        </div>
+        <div class="sub-service-cards">
+          <div class="sub-info-card" style="--sic:#FFF3E0">
+            <span>🍳</span><h4>Cooking Classes</h4>
+            <p>Saturday, 11am</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E8F5E9">
+            <span>📋</span><h4>Meal Planning</h4>
+            <p>Thursday, 5pm</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E0F7FB">
+            <span>🥗</span><h4>Healthy Choices</h4>
+            <p>Online guide</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#FFE4F0">
+            <span>👩‍⚕️</span><h4>Dietitian 1:1</h4>
+            <p>By appointment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MEDIATION ══════════ -->
+  <section id="mediation" class="sub-service-section sub-alt section-pad">
+    <div class="container">
+      <div class="sub-service-layout sub-reverse reveal">
+        <div class="sub-service-cards">
+          <div class="sub-info-card" style="--sic:#FFE4F0">
+            <span>🤝</span><h4>Initial Consultation</h4>
+            <p>Free 30-min session</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E8E8FF">
+            <span>🗣️</span><h4>Joint Sessions</h4>
+            <p>60 mins per session</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E0F7FB">
+            <span>📜</span><h4>Agreement Support</h4>
+            <p>Documented outcomes</p>
+          </div>
+          <div class="sub-info-card" style="--sic:#E8F5E9">
+            <span>🔒</span><h4>Confidential</h4>
+            <p>100% private</p>
+          </div>
+        </div>
+        <div class="sub-service-content">
+          <div class="sub-service-icon-wrap" style="--ssic:#FFE4F0">💬</div>
+          <span class="section-label">Conflict Resolution</span>
+          <h2 class="section-title">Family Mediation</h2>
+          <p>When families face conflict, our trained mediators provide a calm, neutral space to help all parties communicate, understand each other, and work towards practical solutions.</p>
+          <ul class="sub-features">
+            <li><i class="fa-solid fa-check"></i> Trained, impartial mediators</li>
+            <li><i class="fa-solid fa-check"></i> Completely confidential</li>
+            <li><i class="fa-solid fa-check"></i> Separation & co-parenting support</li>
+            <li><i class="fa-solid fa-check"></i> Sibling & extended family disputes</li>
+            <li><i class="fa-solid fa-check"></i> Documented agreements provided</li>
+          </ul>
+          <div class="sub-meta-row">
+            <span class="sub-meta-item"><i class="fa-solid fa-clock"></i> By appointment</span>
+            <span class="sub-meta-item"><i class="fa-solid fa-sterling-sign"></i> Free</span>
+          </div>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book a Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA ══════════ -->
+  <section class="cta-banner section-pad-sm">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-shape cta-shape-1"></div>
+        <div class="cta-shape cta-shape-2"></div>
+        <div class="cta-content">
+          <h2>Every Family Deserves Support</h2>
+          <p>No matter what your family looks like — we're here for you. Book a session today.</p>
+          <div class="cta-actions">
+            <a href="booking.html" class="btn btn-white btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Book Now
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-envelope"></i> Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🌿</div>Wellbeing Hub</div>
+          <p>A community-first space dedicated to health, happiness, and belonging — for everyone.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mental-health.html">Mental Health</a></li>
+            <li><a href="health-checkup.html">Health Checkups</a></li>
+            <li><a href="community-support.html">Community Help</a></li>
+            <li><a href="family-services.html">Family Support</a></li>
+            <li><a href="children-activities.html">Children's Activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+442012345678"><i class="fa-solid fa-phone" style="margin-right:6px;color:var(--secondary)"></i>+44 20 1234 5678</a></li>
+            <li><a href="mailto:info@wellbeinghub.org"><i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--secondary)"></i>info@wellbeinghub.org</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--secondary)"></i>12 Community Lane, London</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock" style="margin-right:6px;color:var(--secondary)"></i>Mon–Sat: 7am – 9pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Community Wellbeing Hub. All rights reserved.</p>
+        <p>Made with ❤️ for the community</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-avatar">💬</div>
+        <div class="chat-header-info">
+          <h4>Wellbeing Support</h4>
+          <span><span class="online-dot"></span> We're online now</span>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <div class="msg msg-bot">Hi! 👋 Need family support?</div>
+        <div class="msg msg-bot">We're here to help your whole family!</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" placeholder="Type a message..." />
+        <button class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <div class="chat-bubble" role="button" aria-label="Open chat">💬</div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

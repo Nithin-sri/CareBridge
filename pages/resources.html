@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Helpful wellbeing guides and resources at Community Wellbeing Hub." />
+  <title>Resources — Community Wellbeing Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/resources.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        <span>Wellbeing Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <div class="hamburger" role="button" tabindex="0" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="../index.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+    <a href="services.html">❤️ Services</a>
+    <a href="amenities.html">🏊 Amenities</a>
+    <a href="events.html">📅 Events</a>
+    <a href="resources.html">📚 Resources</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="booking.html" class="btn btn-primary mobile-cta">
+      <i class="fa-solid fa-calendar-check"></i> Book a Session
+    </a>
+  </div>
+
+  <!-- ══════════ PAGE HERO ══════════ -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+        <span>Resources</span>
+      </div>
+      <span class="section-label">Helpful Guides</span>
+      <h1>Wellbeing <span class="hero-highlight">Resources</span></h1>
+      <p>Free guides, tips, and tools covering mental health, fitness, nutrition, and community wellbeing — written to be easy to understand for everyone.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ QUICK ACCESS FILTER CARDS ══════════ -->
+  <section class="quick-access section-pad-sm">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Browse By Topic</span>
+        <h2 class="section-title">What Are You Looking For?</h2>
+        <p class="section-subtitle">Click a category to filter the resources below.</p>
+      </div>
+      <div class="qa-grid reveal">
+        <button class="qa-card active-filter" data-filter="all">
+          <div class="qa-icon" style="--qclr:#E8E8FF">📚</div>
+          <h3>All Resources</h3>
+          <p>Show everything</p>
+        </button>
+        <button class="qa-card" data-filter="mental-health">
+          <div class="qa-icon" style="--qclr:#E8E8FF">🧠</div>
+          <h3>Mental Health</h3>
+          <p>Mind & emotions</p>
+        </button>
+        <button class="qa-card" data-filter="fitness">
+          <div class="qa-icon" style="--qclr:#E0F7FB">💪</div>
+          <h3>Fitness</h3>
+          <p>Exercise & movement</p>
+        </button>
+        <button class="qa-card" data-filter="nutrition">
+          <div class="qa-icon" style="--qclr:#E8F5E9">🥗</div>
+          <h3>Nutrition</h3>
+          <p>Healthy eating</p>
+        </button>
+        <button class="qa-card" data-filter="family">
+          <div class="qa-icon" style="--qclr:#FFF3E0">👨‍👩‍👧</div>
+          <h3>Family</h3>
+          <p>Parenting & support</p>
+        </button>
+        <button class="qa-card" data-filter="elderly">
+          <div class="qa-icon" style="--qclr:#FFE4F0">👵</div>
+          <h3>Elderly</h3>
+          <p>Ageing well</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FEATURED RESOURCE ══════════ -->
+  <section class="featured-resource section-pad-sm">
+    <div class="container reveal">
+      <div class="featured-card">
+        <div class="featured-left">
+          <span class="featured-tag">⭐ Featured Resource</span>
+          <h2>The Complete Wellbeing Guide 2025</h2>
+          <p>Our comprehensive 40-page guide covering mental health, physical fitness, healthy eating, social connection, and community support — all in one easy-to-read document designed for everyone.</p>
+          <ul class="featured-list">
+            <li><i class="fa-solid fa-check"></i> Mental health strategies that actually work</li>
+            <li><i class="fa-solid fa-check"></i> Beginner-friendly fitness routines</li>
+            <li><i class="fa-solid fa-check"></i> Budget-friendly healthy meal plans</li>
+            <li><i class="fa-solid fa-check"></i> Community support directory</li>
+          </ul>
+          <div class="featured-actions">
+            <a href="#" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-download"></i> Download Free Guide
+            </a>
+            <span class="featured-meta">PDF · 40 pages · Free</span>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div class="featured-visual">
+            <div class="featured-blob"></div>
+            <div class="featured-icon-stack">
+              <div class="fis-item" style="--fc:#E8E8FF">🧠</div>
+              <div class="fis-item" style="--fc:#E0F7FB">💪</div>
+              <div class="fis-item" style="--fc:#E8F5E9">🥗</div>
+              <div class="fis-item" style="--fc:#FFE4F0">🤝</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ RESOURCES GRID ══════════ -->
+  <section class="resources-section section-pad">
+    <div class="container">
+      <div class="resources-header reveal">
+        <div>
+          <span class="section-label">All Resources</span>
+          <h2 class="section-title">Browse All Guides</h2>
+        </div>
+        <div class="resources-count">
+          <span id="resourceCount">12</span> resources found
+        </div>
+      </div>
+
+      <div class="resources-grid" id="resourcesGrid">
+
+        <!-- Resource 1 -->
+        <div class="resource-card card reveal" data-category="mental-health">
+          <div class="resource-card-top" style="--rtc:#E8E8FF">
+            <span class="resource-emoji">🧠</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-primary">Mental Health</span>
+            <h3>Understanding Anxiety: A Beginner's Guide</h3>
+            <p>Learn what anxiety is, why it happens, and practical techniques to manage it in your daily life — explained in simple, clear language.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 10 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-book-open"></i> Read Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 2 -->
+        <div class="resource-card card reveal" data-category="fitness">
+          <div class="resource-card-top" style="--rtc:#E0F7FB">
+            <span class="resource-emoji">💪</span>
+            <span class="resource-type">Workout Plan</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-secondary">Fitness</span>
+            <h3>30-Day Beginner Fitness Challenge</h3>
+            <p>A simple, no-equipment workout plan for complete beginners. Just 20 minutes a day — build strength, energy, and confidence.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 30-day plan</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Plan
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 3 -->
+        <div class="resource-card card reveal" data-category="nutrition">
+          <div class="resource-card-top" style="--rtc:#E8F5E9">
+            <span class="resource-emoji">🥗</span>
+            <span class="resource-type">Meal Plan</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#E8F5E9;color:#2e7d32">Nutrition</span>
+            <h3>Healthy Eating on a Budget</h3>
+            <p>A practical weekly meal plan with delicious, nutritious recipes that won't break the bank. Includes a shopping list and prep tips.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 7-day plan</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Plan
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 4 -->
+        <div class="resource-card card reveal" data-category="mental-health">
+          <div class="resource-card-top" style="--rtc:#F3E5F5">
+            <span class="resource-emoji">😴</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-primary">Mental Health</span>
+            <h3>Sleep Better: 10 Science-Backed Tips</h3>
+            <p>Struggling to sleep? This guide covers proven strategies to improve your sleep quality, backed by the latest research.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 8 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-book-open"></i> Read Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 5 -->
+        <div class="resource-card card reveal" data-category="family">
+          <div class="resource-card-top" style="--rtc:#FFF3E0">
+            <span class="resource-emoji">👶</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#FFF3E0;color:#e65c00">Family</span>
+            <h3>Positive Parenting: Building Strong Bonds</h3>
+            <p>Practical advice for parents on building healthy, positive relationships with children at every age — from toddlers to teenagers.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 15 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-book-open"></i> Read Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 6 -->
+        <div class="resource-card card reveal" data-category="elderly">
+          <div class="resource-card-top" style="--rtc:#FFE4F0">
+            <span class="resource-emoji">🦴</span>
+            <span class="resource-type">Exercise Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#FFE4F0;color:#c2185b">Elderly</span>
+            <h3>Staying Active After 60: Safe Exercise Guide</h3>
+            <p>A gentle exercise programme designed specifically for adults over 60 — improving strength, balance, and mobility safely.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 12 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 7 -->
+        <div class="resource-card card reveal" data-category="mental-health">
+          <div class="resource-card-top" style="--rtc:#E8E8FF">
+            <span class="resource-emoji">🧘</span>
+            <span class="resource-type">Video Series</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-primary">Mental Health</span>
+            <h3>5-Minute Daily Mindfulness Exercises</h3>
+            <p>A series of short guided mindfulness exercises you can do anywhere — in the morning, at lunch, or before bed.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 5 min per session</span>
+              <span><i class="fa-solid fa-video"></i> Video series</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-play"></i> Watch Videos
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 8 -->
+        <div class="resource-card card reveal" data-category="nutrition">
+          <div class="resource-card-top" style="--rtc:#E8F5E9">
+            <span class="resource-emoji">🍎</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#E8F5E9;color:#2e7d32">Nutrition</span>
+            <h3>Understanding Food Labels Made Simple</h3>
+            <p>A no-jargon guide to reading food labels — what to look for, what to avoid, and how to make better choices in the supermarket.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 7 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-book-open"></i> Read Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 9 -->
+        <div class="resource-card card reveal" data-category="fitness">
+          <div class="resource-card-top" style="--rtc:#E0F7FB">
+            <span class="resource-emoji">🏃</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-secondary">Fitness</span>
+            <h3>Couch to 5K: Start Running Today</h3>
+            <p>A beginner-friendly 9-week running programme that takes you from the sofa to completing your first 5K — at your own pace.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 9-week plan</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Plan
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 10 -->
+        <div class="resource-card card reveal" data-category="family">
+          <div class="resource-card-top" style="--rtc:#FFF3E0">
+            <span class="resource-emoji">🍽️</span>
+            <span class="resource-type">Recipe Book</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#FFF3E0;color:#e65c00">Family</span>
+            <h3>Healthy Family Recipes for Fussy Eaters</h3>
+            <p>30 simple, nutritious recipes that even the pickiest children will enjoy — quick to make, budget-friendly, and parent-approved.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 30 recipes</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Book
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 11 -->
+        <div class="resource-card card reveal" data-category="elderly">
+          <div class="resource-card-top" style="--rtc:#FFE4F0">
+            <span class="resource-emoji">🤗</span>
+            <span class="resource-type">Guide</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge" style="background:#FFE4F0;color:#c2185b">Elderly</span>
+            <h3>Combating Loneliness: A Guide for Older Adults</h3>
+            <p>Practical tips, local resources, and community ideas to help older adults stay connected, social, and mentally well.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> 10 min read</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-book-open"></i> Read Guide
+            </a>
+          </div>
+        </div>
+
+        <!-- Resource 12 -->
+        <div class="resource-card card reveal" data-category="mental-health">
+          <div class="resource-card-top" style="--rtc:#E8E8FF">
+            <span class="resource-emoji">💆</span>
+            <span class="resource-type">Toolkit</span>
+          </div>
+          <div class="resource-card-body">
+            <span class="badge badge-primary">Mental Health</span>
+            <h3>Stress Management Toolkit</h3>
+            <p>A complete stress management resource with breathing exercises, journaling prompts, and a weekly self-care planner.</p>
+            <div class="resource-meta">
+              <span><i class="fa-solid fa-clock"></i> Toolkit</span>
+              <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-download"></i> Download Toolkit
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No results -->
+      <div class="no-resources" id="noResources" style="display:none;">
+        <div class="no-resources-icon">📭</div>
+        <h3>No resources found in this category</h3>
+        <p>Try selecting a different category or check back soon.</p>
+        <button class="btn btn-primary" onclick="filterResources('all')">Show All Resources</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════ EMERGENCY CONTACTS ══════════ -->
+  <section class="emergency-section section-pad-sm">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Urgent Support</span>
+        <h2 class="section-title">Need Immediate Help?</h2>
+        <p class="section-subtitle">If you or someone you know needs urgent support, please contact one of these services.</p>
+      </div>
+      <div class="emergency-grid reveal">
+        <div class="emergency-card">
+          <div class="emergency-icon">🆘</div>
+          <h3>Emergency Services</h3>
+          <p>For immediate danger to life</p>
+          <a href="tel:999" class="btn btn-accent btn-sm">Call 999</a>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-icon">🧠</div>
+          <h3>Samaritans</h3>
+          <p>24/7 mental health crisis support</p>
+          <a href="tel:116123" class="btn btn-primary btn-sm">Call 116 123</a>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-icon">💬</div>
+          <h3>Crisis Text Line</h3>
+          <p>Text HELLO to 85258 anytime</p>
+          <a href="sms:85258" class="btn btn-primary btn-sm">Text Now</a>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-icon">🏥</div>
+          <h3>NHS Urgent Help</h3>
+          <p>Non-emergency medical support</p>
+          <a href="tel:111" class="btn btn-primary btn-sm">Call 111</a>
+        </div>
+        <div class="emergency-card">
+          <div class="emergency-icon">🌿</div>
+          <h3>Our Hub Helpline</h3>
+          <p>Mon–Fri, 9am – 6pm</p>
+          <a href="tel:+442012345678" class="btn btn-primary btn-sm">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA BANNER ══════════ -->
+  <section class="cta-banner section-pad-sm">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-shape cta-shape-1"></div>
+        <div class="cta-shape cta-shape-2"></div>
+        <div class="cta-content">
+          <h2>Want Personalised Support?</h2>
+          <p>Our team can point you to the right resources and services for your specific needs.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-white btn-lg">
+              <i class="fa-solid fa-envelope"></i> Get in Touch
+            </a>
+            <a href="booking.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Book a Session
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">🌿</div>
+            Wellbeing Hub
+          </div>
+          <p>A community-first space dedicated to health, happiness, and belonging — for everyone.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="mental-health.html">Mental Health</a></li>
+            <li><a href="health-checkup.html">Health Checkups</a></li>
+            <li><a href="community-support.html">Community Help</a></li>
+            <li><a href="family-services.html">Family Support</a></li>
+            <li><a href="children-activities.html">Children's Activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+442012345678"><i class="fa-solid fa-phone" style="margin-right:6px;color:var(--secondary)"></i>+44 20 1234 5678</a></li>
+            <li><a href="mailto:info@wellbeinghub.org"><i class="fa-solid fa-envelope" style="margin-right:6px;color:var(--secondary)"></i>info@wellbeinghub.org</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:6px;color:var(--secondary)"></i>12 Community Lane, London</a></li>
+            <li><a href="#"><i class="fa-solid fa-clock" style="margin-right:6px;color:var(--secondary)"></i>Mon–Sat: 7am – 9pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Community Wellbeing Hub. All rights reserved.</p>
+        <p>Made with ❤️ for the community</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIVE CHAT ══════════ -->
+  <div class="chat-widget">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-avatar">💬</div>
+        <div class="chat-header-info">
+          <h4>Wellbeing Support</h4>
+          <span><span class="online-dot"></span> We're online now</span>
+        </div>
+      </div>
+      <div class="chat-messages">
+        <div class="msg msg-bot">Hi! 👋 Looking for a specific resource?</div>
+        <div class="msg msg-bot">I can help you find the right guide!</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" placeholder="Type a message..." aria-label="Chat message" />
+        <button class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <div class="chat-bubble" role="button" aria-label="Open chat">💬</div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Resources filter
+    function filterResources(category) {
+      const cards   = document.querySelectorAll('.resource-card');
+      const buttons = document.querySelectorAll('.qa-card');
+      const noRes   = document.getElementById('noResources');
+      const countEl = document.getElementById('resourceCount');
+      buttons.forEach(btn => btn.classList.toggle('active-filter', btn.getAttribute('data-filter') === category));
+      let visible = 0;
+      cards.forEach(card => {
+        const match = category === 'all' || card.getAttribute('data-category') === category;
+        card.classList.toggle('hidden', !match);
+        if (match) visible++;
+      });
+      if (countEl) countEl.textContent = visible;
+      if (noRes) noRes.style.display = visible === 0 ? 'block' : 'none';
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.qa-card[data-filter]').forEach(btn => {
+        btn.addEventListener('click', () => filterResources(btn.getAttribute('data-filter')));
+      });
+    });
+  </script>
+</body>
+</html>
