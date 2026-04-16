@@ -1,5 +1,5 @@
 /* ============================================================
-   AMENITIES PAGE — Styles
+   AMENITIES PAGE — Complete Styles with Real Images
    ============================================================ */
 
 .hero-highlight {
@@ -60,54 +60,88 @@
   font-size: 2rem;
 }
 
-/* ── Amenity Cards ── */
+/* ── Amenity Cards Grid ── */
 .amenity-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
+/* ── Amenity Card ── */
 .amenity-card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-radius: var(--radius-md);
 }
 
-.amenity-card-header {
-  background: var(--ach, var(--primary-light));
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* ── Real Image Header ── */
+.amenity-card-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
-.amenity-card-emoji { font-size: 2.2rem; }
+.amenity-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.amenity-card:hover .amenity-card-img img {
+  transform: scale(1.07);
+}
+.amenity-card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
+  pointer-events: none;
+}
 
+/* ── Status Badge ── */
 .amenity-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   font-family: 'Poppins', sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 100px;
+  z-index: 2;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .amenity-status.open {
-  background: rgba(74, 222, 128, 0.15);
+  background: rgba(74, 222, 128, 0.2);
   color: #16a34a;
+  border: 1px solid rgba(74, 222, 128, 0.4);
 }
 .amenity-status.closed {
-  background: rgba(248, 113, 113, 0.15);
+  background: rgba(248, 113, 113, 0.2);
   color: #dc2626;
+  border: 1px solid rgba(248, 113, 113, 0.4);
 }
 
+/* ── Card Body ── */
 .amenity-card-body {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex: 1;
+  background: var(--white);
 }
 .amenity-card-body h3 {
   font-size: 1rem;
   font-weight: 700;
+  color: var(--text);
 }
 .amenity-card-body p {
   font-size: 0.825rem;
@@ -116,11 +150,15 @@
   flex: 1;
 }
 
+/* ── Details Row ── */
 .amenity-details {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin: 4px 0;
+  padding: 12px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
 }
 .amenity-details span {
   font-size: 0.775rem;
@@ -136,15 +174,20 @@
 }
 
 /* ── Responsive ── */
+@media (max-width: 1280px) {
+  .amenity-cards-grid { grid-template-columns: repeat(3, 1fr); }
+}
 @media (max-width: 1024px) {
   .qa-grid { grid-template-columns: repeat(3, 1fr); }
   .amenity-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenity-section-header { flex-direction: column; }
 }
 @media (max-width: 768px) {
   .qa-grid { grid-template-columns: repeat(2, 1fr); }
-  .amenity-section-header { flex-direction: column; }
-  .amenity-cards-grid { grid-template-columns: 1fr; }
+  .amenity-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenity-card-img { height: 160px; }
 }
 @media (max-width: 480px) {
   .qa-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenity-cards-grid { grid-template-columns: 1fr; }
 }
