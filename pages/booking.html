@@ -56,9 +56,17 @@
   </div>
 
   <!-- ══════════ PAGE HERO ══════════ -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="breadcrumb">
+  <section class="booking-hero">
+    <div class="booking-hero-bg">
+      <img
+        src="../images/services/health-checkup.jpg"
+        alt="Booking a wellbeing session"
+        class="booking-hero-img"
+      />
+      <div class="booking-hero-overlay"></div>
+    </div>
+    <div class="container booking-hero-content">
+      <div class="breadcrumb breadcrumb-light">
         <a href="../index.html">Home</a>
         <span><i class="fa-solid fa-chevron-right"></i></span>
         <span>Booking</span>
@@ -66,6 +74,11 @@
       <span class="section-label">Reserve Your Spot</span>
       <h1>Book a <span class="hero-highlight">Session</span></h1>
       <p>Choose your session type, pick a date and time, and we'll confirm your booking. Quick, easy, and free for most services.</p>
+      <div class="booking-hero-badges">
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Most sessions free</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Instant confirmation</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Cancel anytime</span>
+      </div>
     </div>
   </section>
 
@@ -78,50 +91,50 @@
         <p class="section-subtitle">Select a session type to pre-fill the booking form below.</p>
       </div>
       <div class="qa-grid reveal">
-        <button class="qa-card" onclick="selectSession('Mental Health Counselling')">
+        <button class="qa-card" onclick="selectSession('Mental Health Counselling', this)">
           <div class="qa-icon" style="--qclr:#E8E8FF">🧠</div>
           <h3>Mental Health</h3>
           <p>Counselling & therapy</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Gym Session')">
+        <button class="qa-card" onclick="selectSession('Gym Session', this)">
           <div class="qa-icon" style="--qclr:#E0F7FB">🏋️</div>
           <h3>Gym Session</h3>
           <p>Free with membership</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Swimming Session')">
+        <button class="qa-card" onclick="selectSession('Swimming Session', this)">
           <div class="qa-icon" style="--qclr:#E8F5E9">🏊</div>
           <h3>Swimming</h3>
           <p>Lane & leisure swim</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Free Health Checkup')">
+        <button class="qa-card" onclick="selectSession('Free Health Checkup', this)">
           <div class="qa-icon" style="--qclr:#FFE4F0">🩺</div>
           <h3>Health Checkup</h3>
           <p>Free adult screening</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Yoga & Pilates Class')">
+        <button class="qa-card" onclick="selectSession('Yoga & Pilates Class', this)">
           <div class="qa-icon" style="--qclr:#F3E5F5">🧘</div>
           <h3>Yoga & Pilates</h3>
           <p>Mind & body wellness</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Community Event')">
+        <button class="qa-card" onclick="selectSession('Tennis Court Booking', this)">
+          <div class="qa-icon" style="--qclr:#E8F5E9">🎾</div>
+          <h3>Tennis Court</h3>
+          <p>Book a court</p>
+        </button>
+        <button class="qa-card" onclick="selectSession('Community Event', this)">
           <div class="qa-icon" style="--qclr:#FFF3E0">📅</div>
           <h3>Community Event</h3>
           <p>Workshops & activities</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Children\'s Activity')">
+        <button class="qa-card" onclick="selectSession('Children\'s Activity', this)">
           <div class="qa-icon" style="--qclr:#E8F5E9">🧒</div>
           <h3>Children's Activity</h3>
           <p>Clubs & soft play</p>
         </button>
-        <button class="qa-card" onclick="selectSession('Elderly Care Session')">
+        <button class="qa-card" onclick="selectSession('Elderly Care Session', this)">
           <div class="qa-icon" style="--qclr:#FFF3E0">👵</div>
           <h3>Elderly Care</h3>
           <p>Social & gentle classes</p>
-        </button>
-        <button class="qa-card" onclick="selectSession('Tennis Court Booking')">
-          <div class="qa-icon" style="--qclr:#E8F5E9">🎾</div>
-          <h3>Tennis Court</h3>
-          <p>Book a court</p>
         </button>
       </div>
     </div>
@@ -132,12 +145,12 @@
     <div class="container">
       <div class="booking-layout">
 
-        <!-- Form -->
+        <!-- ── FORM ── -->
         <div class="booking-form-wrap reveal">
           <div class="form-header">
             <span class="section-label">Step 2</span>
             <h2>Your Booking Details</h2>
-            <p>Fill in your details below and we'll confirm your booking via email.</p>
+            <p>Fill in your details below and we'll confirm your booking via email within 24 hours.</p>
           </div>
 
           <form class="booking-form" id="bookingForm" novalidate>
@@ -216,7 +229,6 @@
                 </select>
                 <span class="form-error" id="sessionTypeError">Please select a session type</span>
               </div>
-
               <div class="form-row">
                 <div class="form-group">
                   <label for="preferredDate">Preferred Date <span class="required">*</span></label>
@@ -244,7 +256,6 @@
                   <span class="form-error" id="preferredTimeError">Please select a time</span>
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="participants">Number of Participants <span class="required">*</span></label>
                 <select id="participants" name="participants" required>
@@ -255,10 +266,10 @@
                   <option value="5+">5 or more</option>
                 </select>
               </div>
-
               <div class="form-group">
                 <label for="specialRequirements">Special Requirements or Notes</label>
-                <textarea id="specialRequirements" name="specialRequirements" rows="4" placeholder="e.g. wheelchair access needed, dietary requirements, any health conditions we should be aware of..."></textarea>
+                <textarea id="specialRequirements" name="specialRequirements" rows="4"
+                  placeholder="e.g. wheelchair access needed, dietary requirements, any health conditions we should be aware of..."></textarea>
               </div>
             </div>
 
@@ -269,7 +280,8 @@
               </h3>
               <div class="form-group">
                 <label for="healthConditions">Do you have any health conditions we should know about?</label>
-                <textarea id="healthConditions" name="healthConditions" rows="3" placeholder="e.g. asthma, heart condition, recent surgery, pregnancy... Leave blank if none."></textarea>
+                <textarea id="healthConditions" name="healthConditions" rows="3"
+                  placeholder="e.g. asthma, heart condition, recent surgery, pregnancy... Leave blank if none."></textarea>
               </div>
               <div class="checkbox-group">
                 <label class="checkbox-label">
@@ -283,7 +295,8 @@
                 <label class="checkbox-label">
                   <input type="checkbox" id="consent2" name="consent2" required />
                   <span class="checkmark"></span>
-                  I agree to the <a href="#" class="form-link">Terms & Conditions</a> and <a href="#" class="form-link">Privacy Policy</a> of Community Wellbeing Hub. <span class="required">*</span>
+                  I agree to the <a href="#" class="form-link">Terms & Conditions</a> and
+                  <a href="#" class="form-link">Privacy Policy</a> of Community Wellbeing Hub. <span class="required">*</span>
                 </label>
                 <span class="form-error" id="consent2Error">You must agree to the terms</span>
               </div>
@@ -308,12 +321,14 @@
             <h3>Booking Confirmed!</h3>
             <p>Thank you! Your booking has been received. We'll send a confirmation to your email address shortly.</p>
             <div class="success-details" id="successDetails"></div>
-            <a href="events.html" class="btn btn-primary">Browse More Events</a>
+            <div class="success-actions">
+              <a href="events.html" class="btn btn-primary">Browse More Events</a>
+              <a href="../index.html" class="btn btn-secondary">Back to Home</a>
+            </div>
           </div>
-
         </div>
 
-        <!-- Sidebar -->
+        <!-- ── SIDEBAR ── -->
         <div class="booking-sidebar reveal">
 
           <div class="sidebar-card">
@@ -325,6 +340,17 @@
               <li><i class="fa-solid fa-check"></i> All sessions are inclusive & accessible</li>
               <li><i class="fa-solid fa-check"></i> Equipment provided where needed</li>
             </ul>
+          </div>
+
+          <div class="sidebar-card sidebar-img-card">
+            <img
+              src="../images/amenities/yoga.jpg"
+              alt="Yoga class at Wellbeing Hub"
+              class="sidebar-img"
+            />
+            <div class="sidebar-img-overlay">
+              <span>Join 4,200+ members</span>
+            </div>
           </div>
 
           <div class="sidebar-card sidebar-contact">
@@ -351,22 +377,28 @@
           <div class="sidebar-card sidebar-popular">
             <h3><i class="fa-solid fa-fire"></i> Popular This Week</h3>
             <div class="popular-list">
-              <a href="#" class="popular-item" onclick="selectSession('Yoga & Pilates Class')">
-                <span class="popular-icon">🧘</span>
+              <a href="#" class="popular-item" onclick="selectSession('Yoga & Pilates Class', null)">
+                <div class="popular-img">
+                  <img src="../images/amenities/yoga.jpg" alt="Yoga" />
+                </div>
                 <div>
                   <strong>Yoga & Pilates</strong>
                   <span>Wed & Fri, 7am</span>
                 </div>
               </a>
-              <a href="#" class="popular-item" onclick="selectSession('Free Health Checkup')">
-                <span class="popular-icon">🩺</span>
+              <a href="#" class="popular-item" onclick="selectSession('Free Health Checkup', null)">
+                <div class="popular-img">
+                  <img src="../images/services/health-checkup.jpg" alt="Health Checkup" />
+                </div>
                 <div>
                   <strong>Health Checkup</strong>
                   <span>Tue & Thu, walk-in</span>
                 </div>
               </a>
-              <a href="#" class="popular-item" onclick="selectSession('Swimming Session')">
-                <span class="popular-icon">🏊</span>
+              <a href="#" class="popular-item" onclick="selectSession('Swimming Session', null)">
+                <div class="popular-img">
+                  <img src="../images/amenities/pool.jpg" alt="Swimming" />
+                </div>
                 <div>
                   <strong>Lane Swimming</strong>
                   <span>Daily, 7am–9pm</span>
@@ -413,10 +445,10 @@
           </div>
           <p>A community-first space dedicated to health, happiness, and belonging — for everyone.</p>
           <div class="footer-socials">
-            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="footer-col">
