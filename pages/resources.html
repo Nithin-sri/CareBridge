@@ -55,17 +55,31 @@
     </a>
   </div>
 
-  <!-- ══════════ PAGE HERO ══════════ -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="breadcrumb">
+  <!-- ══════════ HERO WITH BACKGROUND IMAGE ══════════ -->
+  <section class="resources-hero">
+    <div class="resources-hero-bg">
+      <img
+        src="../images/amenities/library.jpg"
+        alt="Wellbeing resources and guides"
+        class="resources-hero-img"
+      />
+      <div class="resources-hero-overlay"></div>
+    </div>
+    <div class="container resources-hero-content">
+      <div class="breadcrumb breadcrumb-light">
         <a href="../index.html">Home</a>
         <span><i class="fa-solid fa-chevron-right"></i></span>
         <span>Resources</span>
       </div>
-      <span class="section-label">Helpful Guides</span>
-      <h1>Wellbeing <span class="hero-highlight">Resources</span></h1>
+      <span class="section-label section-label-light">Helpful Guides</span>
+      <h1>Wellbeing <span class="hero-highlight-light">Resources</span></h1>
       <p>Free guides, tips, and tools covering mental health, fitness, nutrition, and community wellbeing — written to be easy to understand for everyone.</p>
+      <div class="resources-hero-badges">
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> All guides free</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Easy to understand</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Expert written</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> PDF downloads</span>
+      </div>
     </div>
   </section>
 
@@ -134,13 +148,14 @@
           </div>
         </div>
         <div class="featured-right">
-          <div class="featured-visual">
-            <div class="featured-blob"></div>
-            <div class="featured-icon-stack">
-              <div class="fis-item" style="--fc:#E8E8FF">🧠</div>
-              <div class="fis-item" style="--fc:#E0F7FB">💪</div>
-              <div class="fis-item" style="--fc:#E8F5E9">🥗</div>
-              <div class="fis-item" style="--fc:#FFE4F0">🤝</div>
+          <div class="featured-real-img">
+            <img
+              src="../images/amenities/library.jpg"
+              alt="Wellbeing guide resources"
+              loading="lazy"
+            />
+            <div class="featured-img-badge">
+              <span>📖 Free Download</span>
             </div>
           </div>
         </div>
@@ -165,9 +180,9 @@
 
         <!-- Resource 1 -->
         <div class="resource-card card reveal" data-category="mental-health">
-          <div class="resource-card-top" style="--rtc:#E8E8FF">
-            <span class="resource-emoji">🧠</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/services/mental-health.jpg" alt="Understanding Anxiety Guide" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-primary">Mental Health</span>
@@ -185,9 +200,9 @@
 
         <!-- Resource 2 -->
         <div class="resource-card card reveal" data-category="fitness">
-          <div class="resource-card-top" style="--rtc:#E0F7FB">
-            <span class="resource-emoji">💪</span>
-            <span class="resource-type">Workout Plan</span>
+          <div class="resource-card-img">
+            <img src="../images/amenities/gym.jpg" alt="30-Day Beginner Fitness Challenge" loading="lazy" />
+            <div class="resource-card-type">Workout Plan</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-secondary">Fitness</span>
@@ -205,9 +220,9 @@
 
         <!-- Resource 3 -->
         <div class="resource-card card reveal" data-category="nutrition">
-          <div class="resource-card-top" style="--rtc:#E8F5E9">
-            <span class="resource-emoji">🥗</span>
-            <span class="resource-type">Meal Plan</span>
+          <div class="resource-card-img">
+            <img src="../images/services/family.jpg" alt="Healthy Eating on a Budget" loading="lazy" />
+            <div class="resource-card-type">Meal Plan</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#E8F5E9;color:#2e7d32">Nutrition</span>
@@ -225,9 +240,9 @@
 
         <!-- Resource 4 -->
         <div class="resource-card card reveal" data-category="mental-health">
-          <div class="resource-card-top" style="--rtc:#F3E5F5">
-            <span class="resource-emoji">😴</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/services/mental-health.jpg" alt="Sleep Better Guide" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-primary">Mental Health</span>
@@ -245,9 +260,9 @@
 
         <!-- Resource 5 -->
         <div class="resource-card card reveal" data-category="family">
-          <div class="resource-card-top" style="--rtc:#FFF3E0">
-            <span class="resource-emoji">👶</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/services/family.jpg" alt="Positive Parenting Guide" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#FFF3E0;color:#e65c00">Family</span>
@@ -265,9 +280,9 @@
 
         <!-- Resource 6 -->
         <div class="resource-card card reveal" data-category="elderly">
-          <div class="resource-card-top" style="--rtc:#FFE4F0">
-            <span class="resource-emoji">🦴</span>
-            <span class="resource-type">Exercise Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/services/elderly.jpg" alt="Staying Active After 60" loading="lazy" />
+            <div class="resource-card-type">Exercise Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#FFE4F0;color:#c2185b">Elderly</span>
@@ -285,9 +300,9 @@
 
         <!-- Resource 7 -->
         <div class="resource-card card reveal" data-category="mental-health">
-          <div class="resource-card-top" style="--rtc:#E8E8FF">
-            <span class="resource-emoji">🧘</span>
-            <span class="resource-type">Video Series</span>
+          <div class="resource-card-img">
+            <img src="../images/events/meditation.jpg" alt="5-Minute Mindfulness" loading="lazy" />
+            <div class="resource-card-type">Video Series</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-primary">Mental Health</span>
@@ -305,9 +320,9 @@
 
         <!-- Resource 8 -->
         <div class="resource-card card reveal" data-category="nutrition">
-          <div class="resource-card-top" style="--rtc:#E8F5E9">
-            <span class="resource-emoji">🍎</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/amenities/cafe.jpg" alt="Understanding Food Labels" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#E8F5E9;color:#2e7d32">Nutrition</span>
@@ -325,9 +340,9 @@
 
         <!-- Resource 9 -->
         <div class="resource-card card reveal" data-category="fitness">
-          <div class="resource-card-top" style="--rtc:#E0F7FB">
-            <span class="resource-emoji">🏃</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/amenities/cycling.jpg" alt="Couch to 5K Running Plan" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-secondary">Fitness</span>
@@ -345,9 +360,9 @@
 
         <!-- Resource 10 -->
         <div class="resource-card card reveal" data-category="family">
-          <div class="resource-card-top" style="--rtc:#FFF3E0">
-            <span class="resource-emoji">🍽️</span>
-            <span class="resource-type">Recipe Book</span>
+          <div class="resource-card-img">
+            <img src="../images/services/children.jpg" alt="Healthy Family Recipes" loading="lazy" />
+            <div class="resource-card-type">Recipe Book</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#FFF3E0;color:#e65c00">Family</span>
@@ -365,9 +380,9 @@
 
         <!-- Resource 11 -->
         <div class="resource-card card reveal" data-category="elderly">
-          <div class="resource-card-top" style="--rtc:#FFE4F0">
-            <span class="resource-emoji">🤗</span>
-            <span class="resource-type">Guide</span>
+          <div class="resource-card-img">
+            <img src="../images/services/elderly.jpg" alt="Combating Loneliness Guide" loading="lazy" />
+            <div class="resource-card-type">Guide</div>
           </div>
           <div class="resource-card-body">
             <span class="badge" style="background:#FFE4F0;color:#c2185b">Elderly</span>
@@ -385,16 +400,16 @@
 
         <!-- Resource 12 -->
         <div class="resource-card card reveal" data-category="mental-health">
-          <div class="resource-card-top" style="--rtc:#E8E8FF">
-            <span class="resource-emoji">💆</span>
-            <span class="resource-type">Toolkit</span>
+          <div class="resource-card-img">
+            <img src="../images/events/meditation.jpg" alt="Stress Management Toolkit" loading="lazy" />
+            <div class="resource-card-type">Toolkit</div>
           </div>
           <div class="resource-card-body">
             <span class="badge badge-primary">Mental Health</span>
             <h3>Stress Management Toolkit</h3>
             <p>A complete stress management resource with breathing exercises, journaling prompts, and a weekly self-care planner.</p>
             <div class="resource-meta">
-              <span><i class="fa-solid fa-clock"></i> Toolkit</span>
+              <span><i class="fa-solid fa-clock"></i> Full toolkit</span>
               <span><i class="fa-solid fa-file-pdf"></i> PDF available</span>
             </div>
             <a href="#" class="btn btn-primary btn-sm">
@@ -559,7 +574,6 @@
 
   <script src="../js/main.js"></script>
   <script>
-    // Resources filter
     function filterResources(category) {
       const cards   = document.querySelectorAll('.resource-card');
       const buttons = document.querySelectorAll('.qa-card');
