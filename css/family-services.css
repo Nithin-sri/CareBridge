@@ -1,5 +1,5 @@
 /* ============================================================
-   SUB-PAGES SHARED CSS
+   SUB-PAGES SHARED CSS — Complete with Real Images
    Used by: family-services, health-checkup,
             community-support, elderly-care, children-activities
    ============================================================ */
@@ -11,80 +11,142 @@
   background-clip: text;
 }
 
-/* ── Sub Hero ── */
-.sub-hero {
-  padding: 140px 0 72px;
-  background: linear-gradient(145deg,
-    var(--shc1, #E0F7FB) 0%,
-    var(--shc2, #F8F9FF) 60%,
-    var(--shc3, #FFF3E0) 100%);
-  position: relative;
-  overflow: hidden;
-}
-.sub-hero::before {
-  content: '';
-  position: absolute;
-  top: -80px; right: -80px;
-  width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(94,96,206,0.12), transparent 70%);
-  border-radius: 50%;
+.hero-highlight-light {
+  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.sub-hero-inner {
+/* ══════════════════════════════════════
+   SUB-PAGE HERO WITH BACKGROUND IMAGE
+══════════════════════════════════════ */
+.sub-page-hero-img-bg {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 140px 0 60px;
+  overflow: hidden;
+}
+
+.sub-page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.sub-page-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.sub-page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(20,20,50,0.88) 0%,
+    rgba(94,96,206,0.82) 50%,
+    rgba(72,202,228,0.70) 100%
+  );
+}
+
+.sub-page-hero-inner {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 48px;
   align-items: center;
 }
 
-.sub-hero-icon { font-size: 3.5rem; margin-bottom: 12px; display: block; }
+/* Breadcrumb light version */
+.breadcrumb-light a,
+.breadcrumb-light span {
+  color: rgba(255,255,255,0.75) !important;
+}
+.breadcrumb-light a:hover { color: var(--white) !important; }
 
-.sub-hero-content h1 {
+/* Section label light */
+.section-label-light {
+  background: rgba(255,255,255,0.2) !important;
+  color: var(--white) !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+.sub-page-hero-text { max-width: 600px; }
+
+.sub-hero-icon-wrap {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.sub-page-hero-text h1 {
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
   margin: 10px 0 16px;
+  color: var(--white);
 }
-.sub-hero-content p {
+
+.sub-page-hero-text p {
   font-size: 1rem;
-  color: var(--text-light);
+  color: rgba(255,255,255,0.85);
   line-height: 1.8;
   max-width: 520px;
   margin-bottom: 28px;
 }
+
 .sub-hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.sub-hero-stats {
+/* Stats panel */
+.sub-page-hero-stats {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background: var(--white);
+  gap: 16px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: var(--radius-lg);
   padding: 28px 32px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
   min-width: 180px;
 }
+
 .sub-stat { text-align: center; }
+
 .sub-stat-num {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--white);
   line-height: 1;
   margin-bottom: 4px;
 }
-.sub-stat-label { font-size: 0.775rem; color: var(--text-muted); font-weight: 500; }
 
-/* ── Quick Access ── */
+.sub-stat-label {
+  font-size: 0.775rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+
+/* ══════════════════════════════════════
+   QUICK ACCESS CARDS
+══════════════════════════════════════ */
 .quick-access { background: var(--bg); }
+
 .qa-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 40px;
 }
+
 .qa-card {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -94,7 +156,11 @@
   transition: var(--transition);
   display: block;
 }
-.qa-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+.qa-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
 .qa-icon {
   width: 56px; height: 56px;
   background: var(--qclr, var(--primary-light));
@@ -106,7 +172,9 @@
 .qa-card h3 { font-size: 0.875rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
 .qa-card p  { font-size: 0.75rem; color: var(--text-muted); }
 
-/* ── Sub Service Sections ── */
+/* ══════════════════════════════════════
+   SERVICE SECTIONS
+══════════════════════════════════════ */
 .sub-service-section { background: var(--bg); }
 .sub-alt { background: linear-gradient(180deg, #F0F0FF 0%, var(--bg) 100%); }
 
@@ -116,9 +184,11 @@
   gap: 64px;
   align-items: center;
 }
+
 .sub-reverse { direction: rtl; }
 .sub-reverse > * { direction: ltr; }
 
+/* Service icon wrap */
 .sub-service-icon-wrap {
   width: 64px; height: 64px;
   background: var(--ssic, var(--primary-light));
@@ -135,6 +205,7 @@
   margin-bottom: 16px;
 }
 
+/* Feature list */
 .sub-features {
   display: flex;
   flex-direction: column;
@@ -148,10 +219,11 @@
 }
 .sub-features li i { color: var(--primary); font-size: 0.75rem; }
 
+/* Meta row */
 .sub-meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: 28px;
 }
 .sub-meta-item {
@@ -167,36 +239,57 @@
 }
 .sub-meta-item i { color: var(--primary); font-size: 0.75rem; }
 
-.sub-service-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+/* ══════════════════════════════════════
+   REAL IMAGE IN SERVICE SECTIONS
+══════════════════════════════════════ */
+.sub-service-real-img {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 380px;
+  position: relative;
+}
+.sub-service-real-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.sub-service-real-img:hover img {
+  transform: scale(1.04);
+}
+.sub-service-real-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: inset 0 0 0 1px rgba(94,96,206,0.12);
+  pointer-events: none;
 }
 
-.sub-info-card {
-  background: var(--sic, var(--primary-light));
-  border-radius: var(--radius-md);
-  padding: 20px;
-  text-align: center;
-  transition: var(--transition);
-}
-.sub-info-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-sm); }
-.sub-info-card span { font-size: 1.8rem; display: block; margin-bottom: 8px; }
-.sub-info-card h4 { font-size: 0.825rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
-.sub-info-card p  { font-size: 0.775rem; color: var(--text-muted); }
-
-/* ── Responsive ── */
+/* ══════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════ */
 @media (max-width: 1024px) {
-  .sub-hero-inner { grid-template-columns: 1fr; }
-  .sub-hero-stats { flex-direction: row; justify-content: space-around; }
+  .sub-page-hero-inner { grid-template-columns: 1fr; }
+  .sub-page-hero-stats {
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: unset;
+  }
   .qa-grid { grid-template-columns: repeat(2, 1fr); }
   .sub-service-layout { grid-template-columns: 1fr; gap: 40px; }
   .sub-reverse { direction: ltr; }
+  .sub-service-real-img { height: 280px; }
 }
 @media (max-width: 768px) {
-  .sub-hero-stats { flex-direction: column; gap: 12px; }
-  .sub-service-cards { grid-template-columns: 1fr 1fr; }
+  .sub-page-hero-stats { flex-direction: column; gap: 12px; }
+  .sub-service-real-img { height: 240px; }
+  .sub-page-hero-img-bg { padding: 120px 0 48px; }
 }
 @media (max-width: 480px) {
   .qa-grid { grid-template-columns: 1fr 1fr; }
+  .sub-service-real-img { height: 200px; }
 }
