@@ -364,3 +364,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .container { padding: 0 16px; }
   .btn-lg { padding: 15px 26px; font-size: 0.95rem; }
 }
+.logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
