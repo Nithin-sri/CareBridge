@@ -41,7 +41,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Nav -->
   <div class="mobile-nav">
     <a href="../index.html">🏠 Home</a>
     <a href="about.html">ℹ️ About Us</a>
@@ -55,17 +54,30 @@
     </a>
   </div>
 
-  <!-- ══════════ PAGE HERO ══════════ -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="breadcrumb">
+  <!-- ══════════ HERO WITH BACKGROUND IMAGE ══════════ -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg">
+      <img
+        src="../images/about/community.jpg"
+        alt="Contact Community Wellbeing Hub"
+        class="contact-hero-img"
+      />
+      <div class="contact-hero-overlay"></div>
+    </div>
+    <div class="container contact-hero-content">
+      <div class="breadcrumb breadcrumb-light">
         <a href="../index.html">Home</a>
         <span><i class="fa-solid fa-chevron-right"></i></span>
         <span>Contact</span>
       </div>
-      <span class="section-label">Get In Touch</span>
-      <h1>Contact <span class="hero-highlight">Us</span></h1>
+      <span class="section-label section-label-light">Get In Touch</span>
+      <h1>Contact <span class="hero-highlight-light">Us</span></h1>
       <p>We'd love to hear from you. Whether you have a question, need support, or want to get involved — our friendly team is here to help.</p>
+      <div class="contact-hero-badges">
+        <span class="hero-badge-item"><i class="fa-solid fa-clock"></i> Mon–Fri, 9am–6pm</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-reply"></i> Reply within 24 hours</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-phone"></i> +44 20 1234 5678</span>
+      </div>
     </div>
   </section>
 
@@ -98,7 +110,7 @@
           <h3>Visit Us</h3>
           <p>Find our location</p>
         </a>
-        <a href="#" class="qa-card">
+        <a href="#" class="qa-card" onclick="document.querySelector('.chat-bubble').click(); return false;">
           <div class="qa-icon" style="--qclr:#FFF3E0">💬</div>
           <h3>Live Chat</h3>
           <p>Chat with us now</p>
@@ -112,9 +124,8 @@
     <div class="container">
       <div class="contact-layout">
 
-        <!-- Left — Info -->
+        <!-- ── Left Info ── -->
         <div class="contact-info reveal">
-
           <div class="info-header">
             <span class="section-label">Contact Info</span>
             <h2>We're Here for You</h2>
@@ -132,7 +143,6 @@
                 <span>Mon–Fri, 9:00 AM – 6:00 PM</span>
               </div>
             </div>
-
             <div class="info-card">
               <div class="info-icon" style="--ic:#E0F7FB">
                 <i class="fa-solid fa-envelope"></i>
@@ -143,7 +153,6 @@
                 <span>We reply within 24 hours</span>
               </div>
             </div>
-
             <div class="info-card">
               <div class="info-icon" style="--ic:#E8F5E9">
                 <i class="fa-solid fa-location-dot"></i>
@@ -154,7 +163,6 @@
                 <span>Stratford, London, E15 1AA</span>
               </div>
             </div>
-
             <div class="info-card">
               <div class="info-icon" style="--ic:#FFF3E0">
                 <i class="fa-solid fa-clock"></i>
@@ -172,18 +180,10 @@
           <div class="contact-socials">
             <h4>Follow Us</h4>
             <div class="social-row">
-              <a href="#" class="social-btn" aria-label="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-btn" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="#" class="social-btn" aria-label="Twitter">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="#" class="social-btn" aria-label="YouTube">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
 
@@ -222,9 +222,21 @@
             </div>
           </div>
 
+          <!-- Contact Image -->
+          <div class="contact-side-img">
+            <img
+              src="../images/about/community.jpg"
+              alt="Our welcoming community team"
+              loading="lazy"
+            />
+            <div class="contact-side-img-overlay">
+              <span>We're always here for you</span>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Right — Form -->
+        <!-- ── Right Form ── -->
         <div class="contact-form-wrap reveal">
           <div class="contact-form-header">
             <h3>Send Us a Message</h3>
@@ -314,6 +326,7 @@
             <button type="submit" class="btn btn-primary btn-lg contact-submit">
               <i class="fa-solid fa-paper-plane"></i> Send Message
             </button>
+
           </form>
 
           <!-- Success -->
@@ -339,13 +352,21 @@
       </div>
       <div class="location-layout reveal">
         <div class="map-placeholder">
-          <div class="map-inner">
-            <div class="map-pin">📍</div>
-            <h3>Community Wellbeing Hub</h3>
-            <p>12 Community Lane, Stratford<br>London, E15 1AA</p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-              <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
-            </a>
+          <img
+            src="../images/about/building.jpg"
+            alt="Community Wellbeing Hub building"
+            class="map-real-img"
+            loading="lazy"
+          />
+          <div class="map-img-overlay">
+            <div class="map-inner">
+              <div class="map-pin">📍</div>
+              <h3>Community Wellbeing Hub</h3>
+              <p>12 Community Lane, Stratford<br>London, E15 1AA</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-white btn-sm">
+                <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
+              </a>
+            </div>
           </div>
         </div>
         <div class="transport-info">
@@ -554,7 +575,7 @@
       </div>
       <div class="chat-messages">
         <div class="msg msg-bot">Hi! 👋 Have a question for us?</div>
-        <div class="msg msg-bot">Or fill in the contact form and we'll reply soon!</div>
+        <div class="msg msg-bot">Fill in the form and we'll reply soon!</div>
       </div>
       <div class="chat-input-row">
         <input type="text" placeholder="Type a message..." aria-label="Chat message" />
@@ -566,7 +587,6 @@
 
   <script src="../js/main.js"></script>
   <script>
-    // ── Contact Form ──
     document.addEventListener('DOMContentLoaded', () => {
       const form    = document.getElementById('contactForm');
       const success = document.getElementById('contactSuccess');
@@ -581,7 +601,7 @@
       }
 
       ['cFirstName','cLastName','cEmail','cDepartment','cSubject','cMessage'].forEach(f => {
-        document.getElementById(f)?.addEventListener('input', () => clearErr(f + 'Error'));
+        document.getElementById(f)?.addEventListener('input',  () => clearErr(f + 'Error'));
         document.getElementById(f)?.addEventListener('change', () => clearErr(f + 'Error'));
       });
 
@@ -606,13 +626,14 @@
         if (!subject?.value.trim())  { showErr('cSubjectError');  valid = false; }
         if (!message?.value.trim())  { showErr('cMessageError');  valid = false; }
         if (!consent?.checked) {
-          document.getElementById('cConsentError')?.classList.add('visible'); valid = false;
+          document.getElementById('cConsentError')?.classList.add('visible');
+          valid = false;
         } else {
           document.getElementById('cConsentError')?.classList.remove('visible');
         }
 
         if (!valid) {
-          document.querySelector('.error,.form-error.visible')
+          document.querySelector('.error, .form-error.visible')
             ?.scrollIntoView({ behavior:'smooth', block:'center' });
           return;
         }
@@ -627,18 +648,16 @@
       // ── FAQ Accordion ──
       document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
-          const item     = btn.parentElement;
-          const answer   = item.querySelector('.faq-answer');
-          const isOpen   = btn.getAttribute('aria-expanded') === 'true';
+          const item   = btn.parentElement;
+          const answer = item.querySelector('.faq-answer');
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-          // Close all
           document.querySelectorAll('.faq-question').forEach(b => {
             b.setAttribute('aria-expanded','false');
             b.parentElement.querySelector('.faq-answer').style.maxHeight = '0';
             b.parentElement.classList.remove('open');
           });
 
-          // Open clicked
           if (!isOpen) {
             btn.setAttribute('aria-expanded','true');
             answer.style.maxHeight = answer.scrollHeight + 'px';
