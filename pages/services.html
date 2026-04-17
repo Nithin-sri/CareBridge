@@ -55,17 +55,31 @@
     </a>
   </div>
 
-  <!-- ══════════ PAGE HERO ══════════ -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="breadcrumb">
+  <!-- ══════════ HERO WITH BACKGROUND IMAGE ══════════ -->
+  <section class="services-hero">
+    <div class="services-hero-bg">
+      <img
+        src="../images/services/mental-health.jpg"
+        alt="Wellbeing services at Community Wellbeing Hub"
+        class="services-hero-img"
+      />
+      <div class="services-hero-overlay"></div>
+    </div>
+    <div class="container services-hero-content">
+      <div class="breadcrumb breadcrumb-light">
         <a href="../index.html">Home</a>
         <span><i class="fa-solid fa-chevron-right"></i></span>
         <span>Services</span>
       </div>
-      <span class="section-label">What We Offer</span>
-      <h1>Our <span class="hero-highlight">Services</span></h1>
+      <span class="section-label section-label-light">What We Offer</span>
+      <h1>Our <span class="hero-highlight-light">Services</span></h1>
       <p>From mental health support to free health checkups — we provide a wide range of services designed to improve the wellbeing of every member of our community.</p>
+      <div class="services-hero-badges">
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> All ages welcome</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Most services free</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> No referral needed</span>
+        <span class="hero-badge-item"><i class="fa-solid fa-check"></i> Fully confidential</span>
+      </div>
     </div>
   </section>
 
@@ -115,84 +129,95 @@
   <!-- ══════════ MENTAL HEALTH ══════════ -->
   <section id="mental" class="service-section section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#E8E8FF">🧠</div>
-        <div>
+      <div class="service-section-layout reveal">
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#E8E8FF">🧠</div>
           <span class="section-label">Mental Health</span>
           <h2 class="section-title">Mental Health Support</h2>
-          <p class="section-subtitle">Qualified, compassionate support for your emotional and psychological wellbeing — because your mind matters just as much as your body.</p>
+          <p class="section-subtitle-text">Qualified, compassionate support for your emotional and psychological wellbeing — because your mind matters just as much as your body.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8E8FF">
+                <span>🗣️</span>
+                <span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Individual Counselling</h3>
+                <p>One-to-one sessions with a qualified counsellor in a safe, confidential environment. Available weekly.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Qualified counsellors</li>
+                  <li><i class="fa-solid fa-check"></i> Confidential sessions</li>
+                  <li><i class="fa-solid fa-check"></i> Flexible scheduling</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#EDE8FF">
+                <span>👥</span>
+                <span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Group Therapy</h3>
+                <p>Peer-supported group sessions for anxiety, depression, grief, and more. Led by a trained therapist.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Small groups (6–8 people)</li>
+                  <li><i class="fa-solid fa-check"></i> Weekly sessions</li>
+                  <li><i class="fa-solid fa-check"></i> Safe, welcoming space</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFE4F0">
+                <span>🧘</span>
+                <span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Mindfulness Workshops</h3>
+                <p>Guided mindfulness and stress reduction workshops helping you build lasting resilience and calm.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Breathing techniques</li>
+                  <li><i class="fa-solid fa-check"></i> Body scan meditation</li>
+                  <li><i class="fa-solid fa-check"></i> Stress management tools</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8FFE8">
+                <span>📞</span>
+                <span class="badge badge-accent">24/7</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Crisis Support Line</h3>
+                <p>Around-the-clock telephone support for anyone experiencing a mental health crisis or emotional distress.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Available 24 hours</li>
+                  <li><i class="fa-solid fa-check"></i> Trained crisis workers</li>
+                  <li><i class="fa-solid fa-check"></i> Immediate support</li>
+                </ul>
+                <a href="tel:+442012345678" class="btn btn-accent btn-sm">Call Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="mental-health.html" class="btn btn-secondary">
+              View Full Mental Health Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8E8FF">
-            <span>🗣️</span>
-            <span class="badge badge-primary">Free</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Individual Counselling</h3>
-            <p>One-to-one sessions with a qualified counsellor in a safe, confidential environment. Available weekly.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Qualified counsellors</li>
-              <li><i class="fa-solid fa-check"></i> Confidential sessions</li>
-              <li><i class="fa-solid fa-check"></i> Flexible scheduling</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
+        <div class="service-section-real-img reveal">
+          <img
+            src="../images/services/mental-health.jpg"
+            alt="Mental health counselling session"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-heart"></i>
+            Free & Confidential
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#EDE8FF">
-            <span>👥</span>
-            <span class="badge badge-primary">Free</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Group Therapy</h3>
-            <p>Peer-supported group sessions for anxiety, depression, grief, and more. Led by a trained therapist.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Small groups (6–8 people)</li>
-              <li><i class="fa-solid fa-check"></i> Weekly sessions</li>
-              <li><i class="fa-solid fa-check"></i> Safe, welcoming space</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFE4F0">
-            <span>🧘</span>
-            <span class="badge badge-primary">Free</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Mindfulness Workshops</h3>
-            <p>Guided mindfulness and stress reduction workshops helping you build lasting resilience and calm.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Breathing techniques</li>
-              <li><i class="fa-solid fa-check"></i> Body scan meditation</li>
-              <li><i class="fa-solid fa-check"></i> Stress management tools</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Session</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8FFE8">
-            <span>📞</span>
-            <span class="badge badge-accent">24/7</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Crisis Support Line</h3>
-            <p>Around-the-clock telephone support for anyone experiencing a mental health crisis or emotional distress.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Available 24 hours</li>
-              <li><i class="fa-solid fa-check"></i> Trained crisis workers</li>
-              <li><i class="fa-solid fa-check"></i> Immediate support</li>
-            </ul>
-            <a href="tel:+442012345678" class="btn btn-accent btn-sm">Call Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="mental-health.html" class="btn btn-secondary">
-          View Full Mental Health Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -200,84 +225,95 @@
   <!-- ══════════ HEALTH CHECKUPS ══════════ -->
   <section id="health" class="service-section service-section-alt section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#FFE4F0">🩺</div>
-        <div>
+      <div class="service-section-layout service-layout-reverse reveal">
+        <div class="service-section-real-img-left reveal">
+          <img
+            src="../images/services/health-checkup.jpg"
+            alt="Free adult health checkup"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-stethoscope"></i>
+            Walk-in Welcome
+          </div>
+        </div>
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#FFE4F0">🩺</div>
           <span class="section-label">Health</span>
           <h2 class="section-title">Free Adult Health Checkups</h2>
-          <p class="section-subtitle">Regular health screenings available to all adults in the community — no appointment needed for most services.</p>
+          <p class="section-subtitle-text">Regular health screenings available to all adults in the community — no appointment needed for most services.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFE4F0">
+                <span>❤️</span>
+                <span class="badge badge-accent">Walk-in</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Blood Pressure Check</h3>
+                <p>Quick and painless blood pressure monitoring with instant results and guidance from a health professional.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Takes under 5 minutes</li>
+                  <li><i class="fa-solid fa-check"></i> No appointment needed</li>
+                  <li><i class="fa-solid fa-check"></i> Results explained clearly</li>
+                </ul>
+                <a href="booking.html" class="btn btn-accent btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFF3E0">
+                <span>⚖️</span>
+                <span class="badge badge-accent">Walk-in</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>BMI & Weight Assessment</h3>
+                <p>Body mass index and weight assessment with personalised advice on healthy weight management.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> BMI calculation</li>
+                  <li><i class="fa-solid fa-check"></i> Nutrition advice</li>
+                  <li><i class="fa-solid fa-check"></i> Goal setting support</li>
+                </ul>
+                <a href="booking.html" class="btn btn-accent btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8FFE8">
+                <span>🩸</span>
+                <span class="badge badge-secondary">Appointment</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Blood Sugar Testing</h3>
+                <p>Diabetes risk screening using a simple finger-prick test. Early detection can prevent serious complications.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Diabetes risk check</li>
+                  <li><i class="fa-solid fa-check"></i> Quick finger-prick test</li>
+                  <li><i class="fa-solid fa-check"></i> Immediate results</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8E8FF">
+                <span>🫀</span>
+                <span class="badge badge-secondary">Appointment</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Cholesterol Screening</h3>
+                <p>Cholesterol level testing to help assess your risk of heart disease and receive appropriate guidance.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Full lipid panel</li>
+                  <li><i class="fa-solid fa-check"></i> Heart health advice</li>
+                  <li><i class="fa-solid fa-check"></i> GP referral if needed</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="health-checkup.html" class="btn btn-secondary">
+              View Full Health Checkup Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFE4F0">
-            <span>❤️</span>
-            <span class="badge badge-accent">Walk-in</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Blood Pressure Check</h3>
-            <p>Quick and painless blood pressure monitoring with instant results and guidance from a health professional.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Takes under 5 minutes</li>
-              <li><i class="fa-solid fa-check"></i> No appointment needed</li>
-              <li><i class="fa-solid fa-check"></i> Results explained clearly</li>
-            </ul>
-            <a href="booking.html" class="btn btn-accent btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFF3E0">
-            <span>⚖️</span>
-            <span class="badge badge-accent">Walk-in</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>BMI & Weight Assessment</h3>
-            <p>Body mass index and weight assessment with personalised advice on healthy weight management.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> BMI calculation</li>
-              <li><i class="fa-solid fa-check"></i> Nutrition advice</li>
-              <li><i class="fa-solid fa-check"></i> Goal setting support</li>
-            </ul>
-            <a href="booking.html" class="btn btn-accent btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8FFE8">
-            <span>🩸</span>
-            <span class="badge badge-secondary">Appointment</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Blood Sugar Testing</h3>
-            <p>Diabetes risk screening using a simple finger-prick test. Early detection can prevent serious complications.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Diabetes risk check</li>
-              <li><i class="fa-solid fa-check"></i> Quick finger-prick test</li>
-              <li><i class="fa-solid fa-check"></i> Immediate results</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8E8FF">
-            <span>🫀</span>
-            <span class="badge badge-secondary">Appointment</span>
-          </div>
-          <div class="srv-card-body">
-            <h3>Cholesterol Screening</h3>
-            <p>Cholesterol level testing to help assess your risk of heart disease and receive appropriate guidance.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Full lipid panel</li>
-              <li><i class="fa-solid fa-check"></i> Heart health advice</li>
-              <li><i class="fa-solid fa-check"></i> GP referral if needed</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="health-checkup.html" class="btn btn-secondary">
-          View Full Health Checkup Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -285,72 +321,91 @@
   <!-- ══════════ FAMILY SERVICES ══════════ -->
   <section id="family" class="service-section section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#E0F7FB">👨‍👩‍👧</div>
-        <div>
+      <div class="service-section-layout reveal">
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#E0F7FB">👨‍👩‍👧</div>
           <span class="section-label">Family</span>
           <h2 class="section-title">Family Services</h2>
-          <p class="section-subtitle">Supporting families at every stage — from parenting help to family counselling and fun activities for everyone.</p>
-        </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E0F7FB"><span>👶</span><span class="badge badge-secondary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Parenting Support</h3>
-            <p>Workshops and one-to-one guidance for parents — covering newborns through to teenagers.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Baby & toddler groups</li>
-              <li><i class="fa-solid fa-check"></i> Teen parenting advice</li>
-              <li><i class="fa-solid fa-check"></i> Family counselling</li>
-            </ul>
-            <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+          <p class="section-subtitle-text">Supporting families at every stage — from parenting help to family counselling and fun activities for everyone.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E0F7FB">
+                <span>👶</span><span class="badge badge-secondary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Parenting Support</h3>
+                <p>Workshops and one-to-one guidance for parents — covering newborns through to teenagers.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Baby & toddler groups</li>
+                  <li><i class="fa-solid fa-check"></i> Teen parenting advice</li>
+                  <li><i class="fa-solid fa-check"></i> Family counselling</li>
+                </ul>
+                <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8F5E9">
+                <span>🏡</span><span class="badge badge-secondary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Family Wellbeing</h3>
+                <p>Group activities designed to strengthen family bonds through shared experience, play, and communication.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Indoor & outdoor activities</li>
+                  <li><i class="fa-solid fa-check"></i> All ages welcome</li>
+                  <li><i class="fa-solid fa-check"></i> Led by professionals</li>
+                </ul>
+                <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFF3E0">
+                <span>🍽️</span><span class="badge badge-secondary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Family Nutrition</h3>
+                <p>Healthy eating guidance tailored for families — including meal planning, budget cooking, and kids nutrition.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Dietitian-led sessions</li>
+                  <li><i class="fa-solid fa-check"></i> Budget-friendly tips</li>
+                  <li><i class="fa-solid fa-check"></i> Cooking workshops</li>
+                </ul>
+                <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFE4F0">
+                <span>💬</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Family Mediation</h3>
+                <p>Confidential support for families experiencing conflict — helping find resolutions and improve communication.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Neutral mediators</li>
+                  <li><i class="fa-solid fa-check"></i> Confidential process</li>
+                  <li><i class="fa-solid fa-check"></i> Practical outcomes</li>
+                </ul>
+                <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="family-services.html" class="btn btn-secondary">
+              View Full Family Services Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8F5E9"><span>🏡</span><span class="badge badge-secondary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Family Wellbeing Sessions</h3>
-            <p>Group activities designed to strengthen family bonds through shared experience, play, and communication.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Indoor & outdoor activities</li>
-              <li><i class="fa-solid fa-check"></i> All ages welcome</li>
-              <li><i class="fa-solid fa-check"></i> Led by professionals</li>
-            </ul>
-            <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
+        <div class="service-section-real-img reveal">
+          <img
+            src="../images/services/family.jpg"
+            alt="Family services at the Wellbeing Hub"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-users"></i>
+            For Every Family
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFF3E0"><span>🍽️</span><span class="badge badge-secondary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Family Nutrition Advice</h3>
-            <p>Healthy eating guidance tailored for families — including meal planning, budget cooking, and kids nutrition.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Dietitian-led sessions</li>
-              <li><i class="fa-solid fa-check"></i> Budget-friendly tips</li>
-              <li><i class="fa-solid fa-check"></i> Cooking workshops</li>
-            </ul>
-            <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFE4F0"><span>💬</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Family Mediation</h3>
-            <p>Confidential support for families experiencing conflict — helping find resolutions and improve communication.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Neutral mediators</li>
-              <li><i class="fa-solid fa-check"></i> Confidential process</li>
-              <li><i class="fa-solid fa-check"></i> Practical outcomes</li>
-            </ul>
-            <a href="family-services.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="family-services.html" class="btn btn-secondary">
-          View Full Family Services Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -358,72 +413,91 @@
   <!-- ══════════ ELDERLY CARE ══════════ -->
   <section id="elderly" class="service-section service-section-alt section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#FFF3E0">👵</div>
-        <div>
+      <div class="service-section-layout service-layout-reverse reveal">
+        <div class="service-section-real-img-left reveal">
+          <img
+            src="../images/services/elderly.jpg"
+            alt="Elderly care services"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-heart"></i>
+            Dignity & Respect
+          </div>
+        </div>
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#FFF3E0">👵</div>
           <span class="section-label">Elderly Care</span>
           <h2 class="section-title">Elderly Care Services</h2>
-          <p class="section-subtitle">Dedicated services that help older members of our community stay active, connected, and supported.</p>
-        </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFF3E0"><span>🪑</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Seated Exercise Classes</h3>
-            <p>Gentle chair-based exercises designed specifically for older adults to improve flexibility and strength safely.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Chair-based exercises</li>
-              <li><i class="fa-solid fa-check"></i> Qualified instructors</li>
-              <li><i class="fa-solid fa-check"></i> All fitness levels welcome</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          <p class="section-subtitle-text">Dedicated services that help older members of our community stay active, connected, and supported.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFF3E0">
+                <span>🪑</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Seated Exercise</h3>
+                <p>Gentle chair-based exercises designed specifically for older adults to improve flexibility and strength safely.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Chair-based exercises</li>
+                  <li><i class="fa-solid fa-check"></i> Qualified instructors</li>
+                  <li><i class="fa-solid fa-check"></i> All fitness levels</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8FFE8">
+                <span>☕</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Memory Café</h3>
+                <p>A warm social space for people living with dementia and their carers — meeting weekly with activities.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Weekly meetups</li>
+                  <li><i class="fa-solid fa-check"></i> Carer-friendly</li>
+                  <li><i class="fa-solid fa-check"></i> Refreshments provided</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8E8FF">
+                <span>🤸</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Mobility Support</h3>
+                <p>Physiotherapy-led sessions to help older adults maintain independence, balance, and safe movement.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Falls prevention</li>
+                  <li><i class="fa-solid fa-check"></i> Balance training</li>
+                  <li><i class="fa-solid fa-check"></i> Personalised plans</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFE4F0">
+                <span>🎭</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Social Club</h3>
+                <p>Regular social gatherings including games, crafts, day trips, and events to reduce loneliness.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Games & crafts</li>
+                  <li><i class="fa-solid fa-check"></i> Day trips organised</li>
+                  <li><i class="fa-solid fa-check"></i> New friends guaranteed</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="elderly-care.html" class="btn btn-secondary">
+              View Full Elderly Care Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8FFE8"><span>☕</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Memory Café</h3>
-            <p>A warm social space for people living with dementia and their carers — meeting weekly with activities and refreshments.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Weekly meetups</li>
-              <li><i class="fa-solid fa-check"></i> Carer-friendly</li>
-              <li><i class="fa-solid fa-check"></i> Refreshments provided</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8E8FF"><span>🤸</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Mobility Support</h3>
-            <p>Physiotherapy-led sessions to help older adults maintain independence, balance, and safe movement.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Falls prevention</li>
-              <li><i class="fa-solid fa-check"></i> Balance training</li>
-              <li><i class="fa-solid fa-check"></i> Personalised plans</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFE4F0"><span>🎭</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Social Club</h3>
-            <p>Regular social gatherings including games, crafts, day trips, and events to reduce loneliness and build friendships.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Games & crafts</li>
-              <li><i class="fa-solid fa-check"></i> Day trips organised</li>
-              <li><i class="fa-solid fa-check"></i> New friends guaranteed</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="elderly-care.html" class="btn btn-secondary">
-          View Full Elderly Care Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -431,72 +505,91 @@
   <!-- ══════════ CHILDREN'S ACTIVITIES ══════════ -->
   <section id="children" class="service-section section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#E8F5E9">🧒</div>
-        <div>
+      <div class="service-section-layout reveal">
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#E8F5E9">🧒</div>
           <span class="section-label">Children</span>
           <h2 class="section-title">Children's Activities</h2>
-          <p class="section-subtitle">Fun, safe, and educational activities that help children grow, learn, and thrive in a supportive environment.</p>
-        </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8F5E9"><span>🎨</span><span class="badge badge-primary">Low Cost</span></div>
-          <div class="srv-card-body">
-            <h3>Arts & Crafts Club</h3>
-            <p>Creative sessions for children aged 5–12 covering painting, drawing, sculpture, and more.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Ages 5–12</li>
-              <li><i class="fa-solid fa-check"></i> All materials included</li>
-              <li><i class="fa-solid fa-check"></i> Qualified art teachers</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+          <p class="section-subtitle-text">Fun, safe, and educational activities that help children grow, learn, and thrive in a supportive environment.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8F5E9">
+                <span>🎨</span><span class="badge badge-primary">Low Cost</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Arts & Crafts Club</h3>
+                <p>Creative sessions for children aged 5–12 covering painting, drawing, sculpture, and more.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Ages 5–12</li>
+                  <li><i class="fa-solid fa-check"></i> All materials included</li>
+                  <li><i class="fa-solid fa-check"></i> Qualified art teachers</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E0F7FB">
+                <span>🏊</span><span class="badge badge-secondary">Low Cost</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Swimming Lessons</h3>
+                <p>Structured swim lessons for beginners to advanced swimmers, taught by qualified instructors.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Ages 4 and above</li>
+                  <li><i class="fa-solid fa-check"></i> All skill levels</li>
+                  <li><i class="fa-solid fa-check"></i> Small group sizes</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFF3E0">
+                <span>📚</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>After-School Club</h3>
+                <p>A safe and stimulating environment for children after school — with homework help, snacks, and activities.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Mon–Fri 3pm–6pm</li>
+                  <li><i class="fa-solid fa-check"></i> Homework support</li>
+                  <li><i class="fa-solid fa-check"></i> Healthy snacks</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#FFE4F0">
+                <span>🛝</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Soft Play Area</h3>
+                <p>A fully supervised indoor soft play zone for toddlers and young children — perfect for active play.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Ages 1–8</li>
+                  <li><i class="fa-solid fa-check"></i> Fully supervised</li>
+                  <li><i class="fa-solid fa-check"></i> Open 7 days</li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="children-activities.html" class="btn btn-secondary">
+              View Full Children's Activities Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E0F7FB"><span>🏊</span><span class="badge badge-secondary">Low Cost</span></div>
-          <div class="srv-card-body">
-            <h3>Swimming Lessons</h3>
-            <p>Structured swim lessons for beginners to advanced swimmers, taught by qualified instructors.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Ages 4 and above</li>
-              <li><i class="fa-solid fa-check"></i> All skill levels</li>
-              <li><i class="fa-solid fa-check"></i> Small group sizes</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <div class="service-section-real-img reveal">
+          <img
+            src="../images/services/children.jpg"
+            alt="Children's activities at the Wellbeing Hub"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-child"></i>
+            Safe & Supervised
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFF3E0"><span>📚</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>After-School Club</h3>
-            <p>A safe and stimulating environment for children after school — with homework help, snacks, and activities.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Mon–Fri 3pm–6pm</li>
-              <li><i class="fa-solid fa-check"></i> Homework support</li>
-              <li><i class="fa-solid fa-check"></i> Healthy snacks</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#FFE4F0"><span>🛝</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Soft Play Area</h3>
-            <p>A fully supervised indoor soft play zone for toddlers and young children — perfect for active play and socialising.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Ages 1–8</li>
-              <li><i class="fa-solid fa-check"></i> Fully supervised</li>
-              <li><i class="fa-solid fa-check"></i> Open 7 days</li>
-            </ul>
-            <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="children-activities.html" class="btn btn-secondary">
-          View Full Children's Activities Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
@@ -504,72 +597,91 @@
   <!-- ══════════ COMMUNITY SUPPORT ══════════ -->
   <section id="community" class="service-section service-section-alt section-pad">
     <div class="container">
-      <div class="service-section-header reveal">
-        <div class="service-section-icon" style="--sic:#F3E5F5">🤝</div>
-        <div>
+      <div class="service-section-layout service-layout-reverse reveal">
+        <div class="service-section-real-img-left reveal">
+          <img
+            src="../images/services/community.jpg"
+            alt="Community support services"
+            loading="lazy"
+          />
+          <div class="service-img-tag">
+            <i class="fa-solid fa-handshake"></i>
+            No Judgement
+          </div>
+        </div>
+        <div class="service-section-content">
+          <div class="service-section-icon" style="--sic:#F3E5F5">🤝</div>
           <span class="section-label">Community</span>
           <h2 class="section-title">Community Support</h2>
-          <p class="section-subtitle">Practical help for those who need it most — connecting people with the right resources and support services.</p>
-        </div>
-      </div>
-      <div class="service-cards-grid">
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#F3E5F5"><span>🏠</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Housing Advice</h3>
-            <p>Expert guidance on housing rights, council services, and emergency accommodation options.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Tenancy support</li>
-              <li><i class="fa-solid fa-check"></i> Council referrals</li>
-              <li><i class="fa-solid fa-check"></i> Emergency housing help</li>
-            </ul>
-            <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
+          <p class="section-subtitle-text">Practical help for those who need it most — connecting people with the right resources and support services.</p>
+          <div class="service-cards-grid">
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#F3E5F5">
+                <span>🏠</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Housing Advice</h3>
+                <p>Expert guidance on housing rights, council services, and emergency accommodation options.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Tenancy support</li>
+                  <li><i class="fa-solid fa-check"></i> Council referrals</li>
+                  <li><i class="fa-solid fa-check"></i> Emergency help</li>
+                </ul>
+                <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8E8FF">
+                <span>💷</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Benefits Guidance</h3>
+                <p>Help understanding and applying for government benefits, tax credits, and financial support schemes.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Universal Credit help</li>
+                  <li><i class="fa-solid fa-check"></i> Benefits calculator</li>
+                  <li><i class="fa-solid fa-check"></i> Form filling support</li>
+                </ul>
+                <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E8F5E9">
+                <span>🥫</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Food Bank Referrals</h3>
+                <p>Discreet and compassionate referrals to local food banks and community pantries for those in need.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Same-day referrals</li>
+                  <li><i class="fa-solid fa-check"></i> No judgment</li>
+                  <li><i class="fa-solid fa-check"></i> Ongoing support</li>
+                </ul>
+                <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="srv-card card">
+              <div class="srv-card-top" style="--stc:#E0F7FB">
+                <span>🌍</span><span class="badge badge-primary">Free</span>
+              </div>
+              <div class="srv-card-body">
+                <h3>Social Inclusion</h3>
+                <p>Programmes helping isolated individuals reconnect with their community through social events and volunteering.</p>
+                <ul class="srv-features">
+                  <li><i class="fa-solid fa-check"></i> Social events</li>
+                  <li><i class="fa-solid fa-check"></i> Volunteer opportunities</li>
+                  <li><i class="fa-solid fa-check"></i> Language support</li>
+                </ul>
+                <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-cta-link">
+            <a href="community-support.html" class="btn btn-secondary">
+              View Full Community Support Page <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8E8FF"><span>💷</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Benefits Guidance</h3>
-            <p>Help understanding and applying for government benefits, tax credits, and financial support schemes.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Universal Credit help</li>
-              <li><i class="fa-solid fa-check"></i> Benefits calculator</li>
-              <li><i class="fa-solid fa-check"></i> Form filling support</li>
-            </ul>
-            <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E8F5E9"><span>🥫</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Food Bank Referrals</h3>
-            <p>Discreet and compassionate referrals to local food banks and community pantries for those in need.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Same-day referrals</li>
-              <li><i class="fa-solid fa-check"></i> No judgment</li>
-              <li><i class="fa-solid fa-check"></i> Ongoing support</li>
-            </ul>
-            <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="srv-card card reveal">
-          <div class="srv-card-top" style="--stc:#E0F7FB"><span>🌍</span><span class="badge badge-primary">Free</span></div>
-          <div class="srv-card-body">
-            <h3>Social Inclusion</h3>
-            <p>Programmes helping isolated individuals reconnect with their community through social events and volunteering.</p>
-            <ul class="srv-features">
-              <li><i class="fa-solid fa-check"></i> Social events</li>
-              <li><i class="fa-solid fa-check"></i> Volunteer opportunities</li>
-              <li><i class="fa-solid fa-check"></i> Language support</li>
-            </ul>
-            <a href="community-support.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="service-cta-link reveal">
-        <a href="community-support.html" class="btn btn-secondary">
-          View Full Community Support Page <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
     </div>
   </section>
