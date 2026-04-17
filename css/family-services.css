@@ -293,3 +293,49 @@
   .qa-grid { grid-template-columns: 1fr 1fr; }
   .sub-service-real-img { height: 200px; }
 }
+/* ══════════════════════════════════════
+   EMERGENCY STRIP — Community Support
+══════════════════════════════════════ */
+.emergency-strip { background: linear-gradient(180deg, var(--bg) 0%, #FFF0F5 100%); }
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.emergency-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.emergency-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.emergency-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.emergency-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.emergency-card p {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.emergency-card .btn { width: 100%; justify-content: center; }
+
+@media (max-width: 768px) {
+  .emergency-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .emergency-grid { grid-template-columns: 1fr; }
+}
